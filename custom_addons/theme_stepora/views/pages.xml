@@ -1,0 +1,1341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Replace Homepage Wrap with Stepora Design & Editable Structure -->
+        <template id="theme_stepora_homepage" inherit_id="website.homepage" name="Stepora Homepage" priority="1">
+            <xpath expr="//div[@id='wrap']" position="replace">
+                <div id="wrap" class="oe_structure oe_empty">
+                    <div class="stepora-theme">
+                        <!-- Topbar -->
+                        <div class="topbar">
+                            <div class="topbar-left">
+                                <span><i class='bx bxs-truck'></i> Free Shipping on orders over ₹999</span>
+                            </div>
+                            <div class="topbar-center">
+                                <span><i class='bx bx-refresh'></i> 7 Days Easy Return</span>
+                                <span class="separator">|</span>
+                                <span><i class='bx bxs-check-shield'></i> 100% Original Products</span>
+                            </div>
+                            <div class="topbar-right">
+                                <a href="#">Track Order</a>
+                                <span class="separator">|</span>
+                                <a href="#">Wishlist <i class='bx bx-heart'></i></a>
+                                <span class="separator">|</span>
+                                <a href="/web/login">Login / Register</a>
+                            </div>
+                        </div>
+
+                        <!-- Header -->
+                        <header class="header">
+                            <div class="logo">
+                                <i class='bx bxs-shoe' style="font-size: 2rem; color: #1a1a1a;"></i>
+                                <span style="font-weight: 800; font-size: 1.5rem; margin-left: 0.5rem;">Stepora</span>
+                            </div>
+                            <nav class="nav-links">
+                                <a href="/" class="active">Home</a>
+                                <a href="/theme_stepora/static/shop.html">Shop</a>
+                                <a href="/aboutus">About</a>
+                                <a href="/contactus">Contact</a>
+                            </nav>
+                            <div class="search-bar">
+                                <form action="/theme_stepora/static/shop.html" method="get" style="display:flex; width:100%; align-items:center;">
+                                    <input type="text" name="search" placeholder="Search for shoes..."/>
+                                    <button type="submit"><i class='bx bx-search'></i></button>
+                                </form>
+                            </div>
+                            <div class="header-icons">
+                                <a href="/my" class="icon-link"><i class='bx bx-user'></i></a>
+                                <a href="/theme_stepora/static/shop.html?openWishlist=1" class="icon-link" title="Wishlist"><i class='bx bx-heart'></i><span class="badge">0</span></a>
+                                <a href="/theme_stepora/static/shop.html?openCart=1" class="icon-link" title="Shopping Cart"><i class='bx bx-shopping-bag'></i><span class="badge">0</span></a>
+                            </div>
+                        </header>
+
+                        <!-- Hero Section with Dynamic Auto-Slider -->
+                        <section class="hero" id="heroSlider" data-name="Hero Section">
+                            <button type="button" class="nav-btn prev" id="heroPrevBtn" aria-label="Previous Slide"><i class='bx bx-chevron-left'></i></button>
+                            <button type="button" class="nav-btn next" id="heroNextBtn" aria-label="Next Slide"><i class='bx bx-chevron-right'></i></button>
+
+                            <div class="hero-slides-wrapper">
+                                <!-- Slide 1: Step Up Your Style (Mockup Target) -->
+                                <div class="hero-slide active" data-slide="0">
+                                    <div class="hero-content">
+                                        <span class="subtitle"><i class='bx bxs-zap'></i> NEW COLLECTION 2026</span>
+                                        <h1>Step Up<br/>Your Style</h1>
+                                        <p>Discover premium footwear for every journey. From casual sneakers to performance shoes, find your perfect pair at Stepora.</p>
+                                        <div class="hero-cta-group">
+                                            <a href="/theme_stepora/static/shop.html" class="btn-primary">Shop Now <i class='bx bx-right-arrow-alt'></i></a>
+                                            <a href="/theme_stepora/static/shop.html?category=Running" class="btn-secondary-hero">Explore Running</a>
+                                        </div>
+                                        <div class="carousel-dots">
+                                            <span class="dot active" data-index="0" title="Slide 1"></span>
+                                            <span class="dot" data-index="1" title="Slide 2"></span>
+                                            <span class="dot" data-index="2" title="Slide 3"></span>
+                                            <span class="dot" data-index="3" title="Slide 4"></span>
+                                        </div>
+                                    </div>
+                                    <div class="hero-image">
+                                        <div class="hero-card-frame">
+                                            <img src="/theme_stepora/static/images/hero_slide_1.jpg" alt="Stepora Air Flow Sneaker" class="slide-shoe-img" loading="eager"/>
+                                            <div class="floating-text">
+                                                <span>Comfort Meets Style</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 2: High Performance Athletic & Running -->
+                                <div class="hero-slide" data-slide="1">
+                                    <div class="hero-content">
+                                        <span class="subtitle"><i class='bx bxs-hot'></i> TRENDING NOW 2026</span>
+                                        <h1>Engineered For Movement,<br/>Designed For Life.</h1>
+                                        <p>Discover ultra-responsive cushioning, breathable ergonomics, and lightweight agility crafted for every stride of your journey.</p>
+                                        <div class="hero-cta-group">
+                                            <a href="/theme_stepora/static/shop.html" class="btn-primary">Shop Collection <i class='bx bx-right-arrow-alt'></i></a>
+                                            <a href="/theme_stepora/static/shop.html?category=Casual" class="btn-secondary-hero">View Casuals</a>
+                                        </div>
+                                        <div class="carousel-dots">
+                                            <span class="dot" data-index="0" title="Slide 1"></span>
+                                            <span class="dot active" data-index="1" title="Slide 2"></span>
+                                            <span class="dot" data-index="2" title="Slide 3"></span>
+                                            <span class="dot" data-index="3" title="Slide 4"></span>
+                                        </div>
+                                    </div>
+                                    <div class="hero-image">
+                                        <div class="hero-card-frame">
+                                            <img src="/theme_stepora/static/images/hero_slide_2.jpg" alt="Stepora Ultraboost" class="slide-shoe-img" loading="lazy"/>
+                                            <div class="floating-text">
+                                                <span>Performance Redefined</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 3: Urban Streetwear & Casuals -->
+                                <div class="hero-slide" data-slide="2">
+                                    <div class="hero-content">
+                                        <span class="subtitle"><i class='bx bxs-award'></i> ICONIC STREETWEAR</span>
+                                        <h1>Make Every Step<br/>A Statement.</h1>
+                                        <p>Bold proportions, vibrant retro colorways, and timeless street culture aesthetics built to elevate your daily footwear rotation.</p>
+                                        <div class="hero-cta-group">
+                                            <a href="/theme_stepora/static/shop.html" class="btn-primary">Shop Sneakers <i class='bx bx-right-arrow-alt'></i></a>
+                                            <a href="/theme_stepora/static/shop.html?category=Boots" class="btn-secondary-hero">Rugged Boots</a>
+                                        </div>
+                                        <div class="carousel-dots">
+                                            <span class="dot" data-index="0" title="Slide 1"></span>
+                                            <span class="dot" data-index="1" title="Slide 2"></span>
+                                            <span class="dot active" data-index="2" title="Slide 3"></span>
+                                            <span class="dot" data-index="3" title="Slide 4"></span>
+                                        </div>
+                                    </div>
+                                    <div class="hero-image">
+                                        <div class="hero-card-frame">
+                                            <img src="/theme_stepora/static/images/hero_slide_3.jpg" alt="Stepora Heritage Boot" class="slide-shoe-img" loading="lazy"/>
+                                            <div class="floating-text">
+                                                <span>Street Culture Icon</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 4: Heritage Handcrafted Leather & Pro Sport -->
+                                <div class="hero-slide" data-slide="3">
+                                    <div class="hero-content">
+                                        <span class="subtitle"><i class='bx bxs-rocket'></i> PRO ATHLETICS &amp; LUXURY</span>
+                                        <h1>Timeless Elegance,<br/>Unrivaled Craft.</h1>
+                                        <p>Hand-finished genuine full-grain leather oxfords and athletic racers built for confidence, luxury comfort, and enduring speed.</p>
+                                        <div class="hero-cta-group">
+                                            <a href="/theme_stepora/static/shop.html" class="btn-primary">Gear Up Now <i class='bx bx-right-arrow-alt'></i></a>
+                                            <a href="/theme_stepora/static/shop.html?category=Sports" class="btn-secondary-hero">All Performance</a>
+                                        </div>
+                                        <div class="carousel-dots">
+                                            <span class="dot" data-index="0" title="Slide 1"></span>
+                                            <span class="dot" data-index="1" title="Slide 2"></span>
+                                            <span class="dot" data-index="2" title="Slide 3"></span>
+                                            <span class="dot active" data-index="3" title="Slide 4"></span>
+                                        </div>
+                                    </div>
+                                    <div class="hero-image">
+                                        <div class="hero-card-frame">
+                                            <img src="/theme_stepora/static/images/hero_slide_4.jpg" alt="Stepora Pro Athletic" class="slide-shoe-img" loading="lazy"/>
+                                            <div class="floating-text">
+                                                <span>Handmade Luxury</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Features Row -->
+                        <section class="features" data-name="Features">
+                            <div class="feature-item">
+                                <i class='bx bx-truck'></i>
+                                <div>
+                                    <h4>Free Shipping</h4>
+                                    <p>On orders over ₹999</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <i class='bx bx-refresh'></i>
+                                <div>
+                                    <h4>Easy Returns</h4>
+                                    <p>7 Days Return Policy</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <i class='bx bx-shield-quarter'></i>
+                                <div>
+                                    <h4>Secure Payments</h4>
+                                    <p>100% Secure</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <i class='bx bx-support'></i>
+                                <div>
+                                    <h4>24/7 Support</h4>
+                                    <p>We're here to help</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Shop by Category -->
+                        <section class="categories" data-name="Categories">
+                            <div class="section-header">
+                                <h2>Shop by Category</h2>
+                                <a href="/theme_stepora/static/shop.html" class="view-all">View All <i class='bx bx-right-arrow-alt'></i></a>
+                            </div>
+                            <div class="category-grid">
+                                <a href="/theme_stepora/static/shop.html?category=Running" class="category-card">
+                                    <div class="cat-img-wrapper"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=200&amp;q=80" alt="Running"/></div>
+                                    <span>Running</span>
+                                </a>
+                                <a href="/theme_stepora/static/shop.html?category=Casual" class="category-card">
+                                    <div class="cat-img-wrapper"><img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=200&amp;q=80" alt="Casual"/></div>
+                                    <span>Casual</span>
+                                </a>
+                                <a href="/theme_stepora/static/shop.html?category=Formal" class="category-card">
+                                    <div class="cat-img-wrapper"><img src="/theme_stepora/static/images/category_formal.jpg" alt="Formal"/></div>
+                                    <span>Formal</span>
+                                </a>
+                                <a href="/theme_stepora/static/shop.html?category=Sports" class="category-card">
+                                    <div class="cat-img-wrapper"><img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=200&amp;q=80" alt="Sports"/></div>
+                                    <span>Sports</span>
+                                </a>
+                                <a href="/theme_stepora/static/shop.html?category=Boots" class="category-card">
+                                    <div class="cat-img-wrapper"><img src="https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=200&amp;q=80" alt="Boots"/></div>
+                                    <span>Boots</span>
+                                </a>
+                                <a href="/theme_stepora/static/shop.html?category=Sneakers" class="category-card">
+                                    <div class="cat-img-wrapper"><img src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?w=200&amp;q=80" alt="Sneakers"/></div>
+                                    <span>Sneakers</span>
+                                </a>
+                                <a href="/theme_stepora/static/shop.html?category=Sandals" class="category-card">
+                                    <div class="cat-img-wrapper"><img src="https://images.unsplash.com/photo-1603487742131-4160ec999306?w=200&amp;q=80" alt="Sandals"/></div>
+                                    <span>Sandals</span>
+                                </a>
+                            </div>
+                        </section>
+
+                        <!-- Featured Products -->
+                        <section class="products" data-name="Featured Products">
+                            <div class="section-header">
+                                <h2>Featured Products <span class="badge-best">Best Sellers</span></h2>
+                                <a href="/shop" class="view-all">View All <i class='bx bx-right-arrow-alt'></i></a>
+                            </div>
+                            
+                            <div class="product-grid">
+                                <!-- Product 1 -->
+                                <div class="product-card">
+                                    <div class="badge discount">-20%</div>
+                                    <button class="wishlist-btn"><i class='bx bx-heart'></i></button>
+                                    <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=400&amp;q=80" alt="Nike Air Zoom Pegasus 40" class="product-img"/>
+                                    <div class="product-info">
+                                        <h3>Nike Air Zoom Pegasus 40</h3>
+                                        <div class="rating">
+                                            <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'></i>
+                                            <span>4.5 (120)</span>
+                                        </div>
+                                        <div class="price">
+                                            <span class="current">₹5,999</span>
+                                            <span class="original">₹7,499</span>
+                                        </div>
+                                        <button class="btn-add-cart"><i class='bx bx-cart'></i> Add to Cart</button>
+                                    </div>
+                                </div>
+                                
+                                <!-- Product 2 -->
+                                <div class="product-card">
+                                    <div class="badge new">New</div>
+                                    <button class="wishlist-btn"><i class='bx bx-heart'></i></button>
+                                    <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&amp;q=80" alt="Adidas Ultraboost 22" class="product-img"/>
+                                    <div class="product-info">
+                                        <h3>Adidas Ultraboost 22</h3>
+                                        <div class="rating">
+                                            <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                                            <span>4.7 (95)</span>
+                                        </div>
+                                        <div class="price">
+                                            <span class="current">₹6,499</span>
+                                            <span class="original">₹8,999</span>
+                                        </div>
+                                        <button class="btn-add-cart"><i class='bx bx-cart'></i> Add to Cart</button>
+                                    </div>
+                                </div>
+
+                                <!-- Product 3 -->
+                                <div class="product-card">
+                                    <div class="badge discount">-15%</div>
+                                    <button class="wishlist-btn"><i class='bx bx-heart'></i></button>
+                                    <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&amp;q=80" alt="Puma RS-X Retro" class="product-img"/>
+                                    <div class="product-info">
+                                        <h3>Puma RS-X Retro</h3>
+                                        <div class="rating">
+                                            <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'></i>
+                                            <span>4.6 (79)</span>
+                                        </div>
+                                        <div class="price">
+                                            <span class="current">₹4,999</span>
+                                            <span class="original">₹5,999</span>
+                                        </div>
+                                        <button class="btn-add-cart"><i class='bx bx-cart'></i> Add to Cart</button>
+                                    </div>
+                                </div>
+
+                                <!-- Product 4 -->
+                                <div class="product-card">
+                                    <div class="badge bestseller">Bestseller</div>
+                                    <button class="wishlist-btn"><i class='bx bx-heart'></i></button>
+                                    <img src="https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=400&amp;q=80" alt="Woodland Boots" class="product-img"/>
+                                    <div class="product-info">
+                                        <h3>Woodland Boots</h3>
+                                        <div class="rating">
+                                            <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                                            <span>4.8 (302)</span>
+                                        </div>
+                                        <div class="price">
+                                            <span class="current">₹7,999</span>
+                                            <span class="original">₹9,999</span>
+                                        </div>
+                                        <button class="btn-add-cart"><i class='bx bx-cart'></i> Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Promotional Banners -->
+                        <section class="promo-banners" data-name="Promo Banners">
+                            <div class="promo-box dark">
+                                <div class="promo-text">
+                                    <h2>Comfort<br/>in Every Step</h2>
+                                    <p>Premium shoes for better performance &amp; style.</p>
+                                    <a href="/shop" class="btn-promo">Explore Collection <i class='bx bx-right-arrow-alt'></i></a>
+                                </div>
+                                <img src="https://images.unsplash.com/photo-1514989940723-e8e51635b782?w=400&amp;q=80" alt="Comfort"/>
+                            </div>
+                            <div class="promo-box light">
+                                <div class="promo-text">
+                                    <h3>Up to</h3>
+                                    <h2>50% OFF</h2>
+                                    <p>On Selected Styles<br/>Limited Time Only!</p>
+                                    <a href="/shop" class="btn-promo dark-btn">Shop Now <i class='bx bx-right-arrow-alt'></i></a>
+                                </div>
+                                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&amp;q=80" alt="Sale"/>
+                            </div>
+                        </section>
+
+                        <!-- Trusted Brands -->
+                        <section class="trusted-brands" data-name="Trusted Brands">
+                            <h2>Our Trusted Brands</h2>
+                            <div class="brands-grid">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" alt="Nike"/>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg" alt="Adidas"/>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Puma_logo.svg" alt="Puma"/>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Reebok_2019_logo.svg" alt="Reebok"/>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/New_Balance_logo.svg" alt="New Balance"/>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Asics_Logo.svg" alt="Asics"/>
+                                <h3 style="font-family: serif; margin:0;">WOODLAND</h3>
+                            </div>
+                        </section>
+
+                        <!-- Testimonials -->
+                        <section class="testimonials" data-name="Testimonials">
+                            <div class="section-header">
+                                <h2>What Our Customers Say</h2>
+                                <a href="#" class="view-all">View All Reviews <i class='bx bx-right-arrow-alt'></i></a>
+                            </div>
+                            <div class="testimonial-grid">
+                                <div class="testimonial-card">
+                                    <div class="user-info">
+                                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rohan"/>
+                                        <div>
+                                            <h4>Rohan Mehta</h4>
+                                            <div class="rating">
+                                                <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>"Amazing quality and super fast delivery! The shoes are exactly as shown. Highly recommended!"</p>
+                                    <div class="purchased-item">
+                                        <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=50&amp;q=80" alt="Shoe"/>
+                                        <span>Nike Air Zoom Pegasus 40</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="testimonial-card">
+                                    <div class="user-info">
+                                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya"/>
+                                        <div>
+                                            <h4>Priya Sharma</h4>
+                                            <div class="rating">
+                                                <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>"Great collection and very comfortable. I loved the packaging and quick support."</p>
+                                    <div class="purchased-item">
+                                        <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=50&amp;q=80" alt="Shoe"/>
+                                        <span>Adidas Ultraboost 22</span>
+                                    </div>
+                                </div>
+
+                                <div class="testimonial-card">
+                                    <div class="user-info">
+                                        <img src="https://randomuser.me/api/portraits/men/86.jpg" alt="Amit"/>
+                                        <div>
+                                            <h4>Amit Patel</h4>
+                                            <div class="rating">
+                                                <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>"Best online shoe store! Genuine products and competitive prices. Will shop again!"</p>
+                                    <div class="purchased-item">
+                                        <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=50&amp;q=80" alt="Shoe"/>
+                                        <span>Puma RS-X Retro</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Newsletter -->
+                        <section class="newsletter" data-name="Newsletter">
+                            <div class="newsletter-content">
+                                <div class="icon-mail">
+                                    <i class='bx bx-envelope'></i>
+                                </div>
+                                <div class="news-text">
+                                    <h2>Stay Updated!</h2>
+                                    <p>Get the latest offers, new arrivals and exclusive deals.</p>
+                                </div>
+                                <form class="news-form">
+                                    <input type="email" placeholder="Enter your email address" required="required"/>
+                                    <button type="submit">Subscribe <i class='bx bx-right-arrow-alt'></i></button>
+                                </form>
+                            </div>
+                        </section>
+
+                        <!-- Footer -->
+                        <footer class="footer" data-name="Footer">
+                            <div class="footer-container">
+                                <div class="footer-col">
+                                    <div class="logo white">
+                                        <i class='bx bxs-shoe' style="font-size: 2.2rem; color: #f28b50;"></i>
+                                        <span style="font-weight: 800; font-size: 1.6rem; margin-left: 0.5rem; color: #ffffff;">Stepora</span>
+                                    </div>
+                                    <p>Your one-stop destination for premium footwear. We bring you the best brands at the best prices.</p>
+                                    <div class="social-links">
+                                        <a href="#" class="social-btn facebook" title="Facebook" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                                        <a href="#" class="social-btn instagram" title="Instagram" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                                        <a href="#" class="social-btn youtube" title="YouTube" aria-label="YouTube"><i class='bx bxl-youtube'></i></a>
+                                        <a href="#" class="social-btn pinterest" title="Pinterest" aria-label="Pinterest"><i class='bx bxl-pinterest'></i></a>
+                                        <a href="#" class="social-btn linkedin" title="LinkedIn" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                                    </div>
+                                </div>
+                                
+                                <div class="footer-col">
+                                    <h4>Quick Links</h4>
+                                    <a href="/">Home</a>
+                                    <a href="/shop">Shop</a>
+                                    <a href="/aboutus">About Us</a>
+                                    <a href="/contactus">Contact Us</a>
+                                    <a href="#">Track Order</a>
+                                </div>
+                                
+                                <div class="footer-col">
+                                    <h4>Categories</h4>
+                                    <a href="/shop">Running</a>
+                                    <a href="/shop">Casual</a>
+                                    <a href="/shop">Formal</a>
+                                    <a href="/shop">Sports</a>
+                                    <a href="/shop">Boots</a>
+                                    <a href="/shop">Sneakers</a>
+                                </div>
+                                
+                                <div class="footer-col">
+                                    <h4>Customer Service</h4>
+                                    <a href="#">FAQs</a>
+                                    <a href="#">Return Policy</a>
+                                    <a href="#">Shipping Info</a>
+                                    <a href="#">Size Guide</a>
+                                    <a href="#">Help Center</a>
+                                </div>
+                                
+                                <div class="footer-col">
+                                    <h4>Contact Us</h4>
+                                    <div class="contact-info">
+                                        <p><i class='bx bx-phone'></i> <span>+91 98765 43210</span></p>
+                                        <p><i class='bx bx-envelope'></i> <span>support@stepora.com</span></p>
+                                        <p><i class='bx bx-map'></i> <span>Vadodara, Gujarat, India</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="footer-bottom">
+                                <p class="copyright">&#169; 2026 Stepora. All rights reserved.</p>
+                                <div class="payment-methods">
+                                    <span class="pay-title">We Accept:</span>
+                                    <span class="pay-card visa" title="Visa"><i class='bx bxl-visa'></i></span>
+                                    <span class="pay-card mastercard" title="Mastercard"><i class='bx bxl-mastercard'></i></span>
+                                    <span class="pay-card paytm" title="Paytm">Paytm</span>
+                                    <span class="pay-card upi" title="UPI">UPI</span>
+                                    <span class="pay-card gpay" title="Google Pay"><i class='bx bxl-google'></i> Pay</span>
+                                </div>
+                                <button class="back-to-top" id="backToTopBtn" title="Back to top" aria-label="Back to top"><i class='bx bx-up-arrow-alt'></i></button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+        
+        <!-- Hide default header and footer when Stepora theme is active -->
+        <template id="hide_default_header_footer" inherit_id="website.layout" name="Hide Default Header and Footer">
+            <xpath expr="//header" position="attributes">
+                <attribute name="style">display: none !important;</attribute>
+            </xpath>
+            <xpath expr="//footer" position="attributes">
+                <attribute name="style">display: none !important;</attribute>
+            </xpath>
+        </template>
+        
+        <!-- Add Boxicons & Direct Stepora Stylesheet to Head -->
+        <template id="stepora_head_boxicons" inherit_id="website.layout" name="Stepora Head Assets">
+            <xpath expr="//head" position="inside">
+                <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+                <link href="/theme_stepora/static/src/css/style.css?v=2.5" rel="stylesheet" type="text/css"/>
+                <script src="/theme_stepora/static/src/js/script.js?v=2.5" type="text/javascript"></script>
+                <style type="text/css">
+                    .footer-col .logo i, .footer-col .logo.white i { color: #f28b50 !important; font-size: 2.4rem !important; }
+                    .social-links { display: flex !important; gap: 12px !important; align-items: center !important; }
+                    .social-links a { width: 44px !important; height: 44px !important; border-radius: 50% !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; box-shadow: 0 4px 10px rgba(0,0,0,0.4) !important; text-decoration: none !important; }
+                    .social-links a i { color: #ffffff !important; font-size: 1.45rem !important; }
+                    .social-links a:nth-child(1) { background: #1877f2 !important; }
+                    .social-links a:nth-child(2) { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888) !important; }
+                    .social-links a:nth-child(3) { background: #ff0000 !important; }
+                    .social-links a:nth-child(4) { background: #e60023 !important; }
+                    .social-links a:nth-child(5) { background: #0077b5 !important; }
+                    .social-links a:hover { transform: translateY(-4px) scale(1.1) !important; box-shadow: 0 8px 20px rgba(0,0,0,0.6) !important; }
+                    .payment-methods { display: flex !important; align-items: center !important; gap: 10px !important; }
+                    .payment-methods i.bxl-visa { display: inline-flex !important; align-items: center !important; justify-content: center !important; width: 56px !important; height: 32px !important; background: #ffffff !important; color: #1a1f71 !important; font-size: 2.1rem !important; border-radius: 6px !important; box-shadow: 0 2px 8px rgba(0,0,0,0.3) !important; }
+                    .payment-methods i.bxl-mastercard { display: inline-flex !important; align-items: center !important; justify-content: center !important; width: 56px !important; height: 32px !important; background: #ffffff !important; color: #eb001b !important; font-size: 2.1rem !important; border-radius: 6px !important; box-shadow: 0 2px 8px rgba(0,0,0,0.3) !important; }
+                    .payment-methods .pay-badge:nth-of-type(1) { display: inline-flex !important; align-items: center !important; justify-content: center !important; height: 32px !important; padding: 0 14px !important; background: #002e6e !important; color: #00b9f5 !important; font-size: 0.88rem !important; font-weight: 800 !important; border-radius: 6px !important; box-shadow: 0 2px 8px rgba(0,0,0,0.3) !important; }
+                    .payment-methods .pay-badge:nth-of-type(2) { display: inline-flex !important; align-items: center !important; justify-content: center !important; height: 32px !important; padding: 0 14px !important; background: #5f259f !important; color: #ffffff !important; font-size: 0.88rem !important; font-weight: 800 !important; border-radius: 6px !important; box-shadow: 0 2px 8px rgba(0,0,0,0.3) !important; }
+                    .back-to-top { width: 42px !important; height: 42px !important; background: #f28b50 !important; color: #ffffff !important; border: none !important; border-radius: 50% !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; font-size: 1.35rem !important; cursor: pointer !important; box-shadow: 0 4px 12px rgba(242,139,80,0.5) !important; }
+                </style>
+            </xpath>
+        </template>
+        <!-- Stepora About Us Page Template -->
+        <template id="theme_stepora_aboutus" inherit_id="website.aboutus" name="Stepora About Us" priority="1">
+            <xpath expr="//div[@id='wrap']" position="replace">
+                <div id="wrap" class="oe_structure oe_empty">
+                    <div class="stepora-theme">
+                        <!-- Topbar -->
+                        <div class="topbar">
+                            <div class="topbar-left">
+                                <span><i class='bx bxs-truck'></i> Free Shipping on orders over $99</span>
+                            </div>
+                            <div class="topbar-center">
+                                <span><i class='bx bx-refresh'></i> 7 Days Easy Return</span>
+                                <span class="separator">|</span>
+                                <span><i class='bx bxs-check-shield'></i> 100% Original Products</span>
+                            </div>
+                            <div class="topbar-right">
+                                <a href="#">Track Order</a>
+                                <span class="separator">|</span>
+                                <a href="/theme_stepora/static/shop.html?openWishlist=1">Wishlist <i class='bx bx-heart'></i></a>
+                                <span class="separator">|</span>
+                                <a href="/web/login">Login / Register</a>
+                            </div>
+                        </div>
+
+                        <!-- Header -->
+                        <header class="header">
+                            <div class="header-inner">
+                                <a href="/" class="logo">
+                                    <div class="logo-mark">
+                                        <svg viewBox="0 0 48 32" width="38" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4 22C4 22 7 15 14 14C20 13 25 8 30 5C35 2 41 2 43 5C45 8 44 12 41 15C36 20 28 22 20 23C13 24 5 24 4 22Z" stroke="#f28b50" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6 25C14 26 26 26 38 23" stroke="#f28b50" stroke-width="3.2" stroke-linecap="round"/>
+                                            <path d="M16 14L22 20" stroke="#f28b50" stroke-width="2.2" stroke-linecap="round"/>
+                                            <path d="M22 12L28 18" stroke="#f28b50" stroke-width="2.2" stroke-linecap="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="logo-text-group">
+                                        <span class="brand-name">Stepora</span>
+                                        <span class="brand-tagline">Walk Better Live Better</span>
+                                    </div>
+                                </a>
+                                
+                                <nav class="nav-links">
+                                    <a href="/">Home</a>
+                                    <a href="/theme_stepora/static/shop.html">Shop</a>
+                                    <a href="/aboutus" class="active">About</a>
+                                    <a href="/contactus">Contact</a>
+                                </nav>
+                                
+                                <div class="search-bar">
+                                    <form action="/theme_stepora/static/shop.html" method="get" style="display:flex; width:100%; align-items:center;">
+                                        <input type="text" name="search" placeholder="Search for shoes, brands, styles..."/>
+                                        <button type="submit"><i class='bx bx-search'></i></button>
+                                    </form>
+                                </div>
+                                
+                                <div class="header-icons">
+                                    <a href="/my" class="icon-link"><i class='bx bx-user'></i></a>
+                                    <a href="/theme_stepora/static/shop.html?openWishlist=1" class="icon-link" title="Wishlist"><i class='bx bx-heart'></i><span class="badge" id="headerWishlistBadge">0</span></a>
+                                    <a href="/theme_stepora/static/shop.html?openCart=1" class="icon-link" title="Shopping Cart"><i class='bx bx-shopping-bag'></i><span class="badge" id="headerCartBadge">0</span></a>
+                                </div>
+                            </div>
+                        </header>
+
+                        <!-- Main About Page Body -->
+                        <main class="about-page">
+                            <!-- Top Breadcrumb &amp; Hero Banner -->
+                            <section class="about-banner-section">
+                                <div class="about-banner-container">
+                                    <nav class="about-breadcrumb" aria-label="Breadcrumb">
+                                        <a href="/">Home</a>
+                                        <span class="separator"><i class='bx bx-chevron-right'></i></span>
+                                        <span class="current">About Us</span>
+                                    </nav>
+
+                                    <div class="about-banner-content">
+                                        <div class="about-banner-text">
+                                            <h1 class="about-banner-title">About <span class="brand-accent">Stepora</span></h1>
+                                            <p class="about-banner-subtitle">More than just shoes, we're here to keep you moving forward.</p>
+                                        </div>
+                                        <div class="about-banner-visual">
+                                            <div class="about-banner-img-wrap">
+                                                <img src="/theme_stepora/static/images/about_banner_shoes.jpg" alt="Stepora Premium Sneakers on Pedestal" class="about-banner-img" loading="eager"/>
+                                                <div class="about-doodle-badge" aria-hidden="true">
+                                                    <span class="about-doodle-text">Better Shoes,<br/>Better Days</span>
+                                                    <svg class="about-doodle-arrow" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10 15 C 25 10, 45 25, 45 42 M 36 36 L 45 44 L 52 35" stroke="#1e293b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- Main Content Area -->
+                            <div class="about-main-wrapper">
+                                <!-- 1. Our Story 3-Card Grid -->
+                                <section class="about-story-grid">
+                                    <!-- Left Card: Lifestyle Video / Photo Card -->
+                                    <div class="about-video-card" id="aboutVideoTrigger">
+                                        <img src="/theme_stepora/static/images/about_story_runner.jpg" alt="Runner on Urban Ledge" class="about-video-bg" loading="lazy"/>
+                                        <div class="about-video-overlay"></div>
+                                        <div class="about-video-sticker" aria-hidden="true">
+                                            <span class="about-video-sticker-text">Style, Comfort,<br/>Performance</span>
+                                        </div>
+                                        <button type="button" class="about-video-play-btn" id="aboutPlayBtn" aria-label="Watch Stepora Brand Video">
+                                            <i class='bx bx-play'></i>
+                                        </button>
+                                    </div>
+
+                                    <!-- Middle Card: Brand Story Text -->
+                                    <div class="about-story-text-card">
+                                        <div>
+                                            <span class="about-badge-tag">OUR STORY</span>
+                                            <h2 class="about-story-heading">Stepora – Built for Every Step</h2>
+                                            <div class="about-story-paragraphs">
+                                                <p>At Stepora, we believe that the right pair of shoes can make a big difference. Whether you're running, walking, working, or simply exploring the city, we bring you premium footwear that combines style, comfort and performance.</p>
+                                                <p>Our journey started with a simple idea – to make high-quality, trendy and comfortable shoes accessible to everyone. Today, Stepora is a trusted online destination for men, women and kids, offering a wide range of footwear from global brands and our own curated collection.</p>
+                                            </div>
+                                        </div>
+                                        <a href="/theme_stepora/static/shop.html" class="about-story-cta-btn">
+                                            <span>Explore Our Collection</span>
+                                            <i class='bx bx-right-arrow-alt'></i>
+                                        </a>
+                                    </div>
+
+                                    <!-- Right Card: Metric Numbers &amp; Guarantees -->
+                                    <div class="about-stats-card">
+                                        <div class="about-stat-row">
+                                            <div class="about-stat-icon-wrap">
+                                                <i class='bx bx-heart-circle'></i>
+                                            </div>
+                                            <div class="about-stat-info">
+                                                <div class="about-stat-heading">
+                                                    <span class="stat-num" data-target="10000" data-suffix="+">10,000+</span> Happy Customers
+                                                </div>
+                                                <span class="about-stat-desc">Loved by shoe lovers across India</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="about-stat-row">
+                                            <div class="about-stat-icon-wrap">
+                                                <i class='bx bx-diamond'></i>
+                                            </div>
+                                            <div class="about-stat-info">
+                                                <div class="about-stat-heading">
+                                                    <span class="stat-num" data-target="100" data-suffix="%">100%</span> Original Products
+                                                </div>
+                                                <span class="about-stat-desc">Only authentic brands</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="about-stat-row">
+                                            <div class="about-stat-icon-wrap">
+                                                <i class='bx bx-package'></i>
+                                            </div>
+                                            <div class="about-stat-info">
+                                                <div class="about-stat-heading">
+                                                    <span class="stat-num">Free</span> Shipping on orders over $99
+                                                </div>
+                                                <span class="about-stat-desc">Fast &amp; reliable delivery</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="about-stat-row">
+                                            <div class="about-stat-icon-wrap">
+                                                <i class='bx bx-shield-quarter'></i>
+                                            </div>
+                                            <div class="about-stat-info">
+                                                <div class="about-stat-heading">
+                                                    <span class="stat-num" data-target="7" data-suffix=" Days">7 Days</span> Easy Return Policy
+                                                </div>
+                                                <span class="about-stat-desc">Shop with confidence</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <!-- 2. Features Row (4 Pillars) -->
+                                <section class="about-features-row">
+                                    <div class="about-feature-box">
+                                        <div class="about-feature-icon"><i class='bx bx-diamond'></i></div>
+                                        <div class="about-feature-details">
+                                            <h4>Premium Quality</h4>
+                                            <p>We offer only the best quality footwear from trusted brands.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="about-feature-box">
+                                        <div class="about-feature-icon"><i class='bx bx-star'></i></div>
+                                        <div class="about-feature-details">
+                                            <h4>Latest Trends</h4>
+                                            <p>Stay updated with the newest styles and collections.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="about-feature-box">
+                                        <div class="about-feature-icon"><i class='bx bx-truck'></i></div>
+                                        <div class="about-feature-details">
+                                            <h4>Fast Delivery</h4>
+                                            <p>Get your favorite shoes delivered to your doorstep.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="about-feature-box">
+                                        <div class="about-feature-icon"><i class='bx bx-headphone'></i></div>
+                                        <div class="about-feature-details">
+                                            <h4>24/7 Support</h4>
+                                            <p>We are always here to help you anytime.</p>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <!-- 3. Values &amp; Team Section (2 Columns) -->
+                                <section class="about-values-team-grid">
+                                    <div class="about-values-card">
+                                        <div>
+                                            <span class="about-badge-tag">OUR VALUES</span>
+                                            <h3 class="about-values-title">What Makes Us Different?</h3>
+                                            <p class="about-values-desc">At Stepora, we focus on quality, comfort, and customer satisfaction. Our team works every day to bring you the best footwear options with a smooth and reliable shopping experience.</p>
+                                        </div>
+                                        <div class="about-values-pills">
+                                            <span class="value-pill active" title="Top-grade materials and durability">Quality</span>
+                                            <span class="value-pill" title="Ergonomic support engineered for all-day wear">Comfort</span>
+                                            <span class="value-pill" title="Modern, trend-forward silhouettes">Style</span>
+                                            <span class="value-pill" title="100% authentic brands and guaranteed service">Trust</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="about-team-card" id="team">
+                                        <div class="about-team-header">
+                                            <div>
+                                                <h3>Our Team</h3>
+                                                <p>A passionate team working to bring the best footwear to you.</p>
+                                            </div>
+                                            <a href="javascript:void(0)" class="meet-team-link">Meet Our Team <i class='bx bx-right-arrow-alt'></i></a>
+                                        </div>
+
+                                        <div class="about-team-members">
+                                            <div class="team-member-item">
+                                                <div class="team-member-avatar-wrap">
+                                                    <img src="/theme_stepora/static/images/team_rohan.jpg" alt="Rohan Mehta - Founder &amp; CEO" class="team-member-avatar" loading="lazy"/>
+                                                </div>
+                                                <h4 class="team-member-name">Rohan Mehta</h4>
+                                                <span class="team-member-role">Founder &amp; CEO</span>
+                                            </div>
+
+                                            <div class="team-member-item">
+                                                <div class="team-member-avatar-wrap">
+                                                    <img src="/theme_stepora/static/images/team_priya.jpg" alt="Priya Sharma - Product Manager" class="team-member-avatar" loading="lazy"/>
+                                                </div>
+                                                <h4 class="team-member-name">Priya Sharma</h4>
+                                                <span class="team-member-role">Product Manager</span>
+                                            </div>
+
+                                            <div class="team-member-item">
+                                                <div class="team-member-avatar-wrap">
+                                                    <img src="/theme_stepora/static/images/team_amit.jpg" alt="Amit Patel - Design Lead" class="team-member-avatar" loading="lazy"/>
+                                                </div>
+                                                <h4 class="team-member-name">Amit Patel</h4>
+                                                <span class="team-member-role">Design Lead</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <!-- 4. What Our Customers Say (Testimonials) -->
+                                <section class="about-testimonials-section" id="reviews">
+                                    <div class="about-testimonials-header">
+                                        <h2>What Our Customers Say</h2>
+                                        <a href="/theme_stepora/static/shop.html" class="view-all-reviews-link">View All Reviews <i class='bx bx-right-arrow-alt'></i></a>
+                                    </div>
+
+                                    <div class="about-testimonials-grid">
+                                        <div class="testimonial-card-item">
+                                            <img src="/theme_stepora/static/images/customer_rahul.jpg" alt="Rahul S." class="testimonial-avatar" loading="lazy"/>
+                                            <div class="testimonial-content">
+                                                <span class="testimonial-quote-icon">“</span>
+                                                <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                                                    <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                                                </div>
+                                                <p class="testimonial-text">"Amazing quality and super fast delivery! The shoes are exactly as shown. Highly recommended!"</p>
+                                                <span class="testimonial-author">- Rahul S.</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="testimonial-card-item">
+                                            <img src="/theme_stepora/static/images/customer_sneha.jpg" alt="Sneha K." class="testimonial-avatar" loading="lazy"/>
+                                            <div class="testimonial-content">
+                                                <span class="testimonial-quote-icon">“</span>
+                                                <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                                                    <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                                                </div>
+                                                <p class="testimonial-text">"Great collection and very comfortable. I loved the packaging and quick support."</p>
+                                                <span class="testimonial-author">- Sneha K.</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="testimonial-card-item">
+                                            <img src="/theme_stepora/static/images/customer_karan.jpg" alt="Karan M." class="testimonial-avatar" loading="lazy"/>
+                                            <div class="testimonial-content">
+                                                <span class="testimonial-quote-icon">“</span>
+                                                <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                                                    <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                                                </div>
+                                                <p class="testimonial-text">"Best online shoe store! Genuine products and competitive prices. Will shop again!"</p>
+                                                <span class="testimonial-author">- Karan M.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </main>
+
+                        <!-- Stepora Dark Footer -->
+                        <footer class="footer">
+                            <div class="footer-container">
+                                <div class="footer-col">
+                                    <div class="logo white">
+                                        <i class='bx bxs-shoe' style="font-size: 2.2rem; color: #f28b50;"></i>
+                                        <span style="font-weight: 800; font-size: 1.6rem; margin-left: 0.5rem; color: #ffffff;">Stepora</span>
+                                    </div>
+                                    <p>Your one-stop destination for premium footwear. We bring you the best brands at the best prices.</p>
+                                    <div class="social-links">
+                                        <a href="#" class="social-btn facebook" title="Facebook" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                                        <a href="#" class="social-btn instagram" title="Instagram" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                                        <a href="#" class="social-btn youtube" title="YouTube" aria-label="YouTube"><i class='bx bxl-youtube'></i></a>
+                                        <a href="#" class="social-btn pinterest" title="Pinterest" aria-label="Pinterest"><i class='bx bxl-pinterest'></i></a>
+                                        <a href="#" class="social-btn linkedin" title="LinkedIn" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                                    </div>
+                                </div>
+                                
+                                <div class="footer-col">
+                                    <h4>Quick Links</h4>
+                                    <a href="/">Home</a>
+                                    <a href="/theme_stepora/static/shop.html">Shop</a>
+                                    <a href="/aboutus" style="color: #f28b50; font-weight: 600;">About Us</a>
+                                    <a href="/contactus">Contact Us</a>
+                                    <a href="#">Track Order</a>
+                                </div>
+                                
+                                <div class="footer-col">
+                                    <h4>Categories</h4>
+                                    <a href="/theme_stepora/static/shop.html?category=Running">Running</a>
+                                    <a href="/theme_stepora/static/shop.html?category=Casual">Casual</a>
+                                    <a href="/theme_stepora/static/shop.html?category=Formal">Formal</a>
+                                    <a href="/theme_stepora/static/shop.html?category=Sports">Sports</a>
+                                    <a href="/theme_stepora/static/shop.html?category=Boots">Boots</a>
+                                    <a href="/theme_stepora/static/shop.html?category=Sneakers">Sneakers</a>
+                                </div>
+                                
+                                <div class="footer-col">
+                                    <h4>Customer Service</h4>
+                                    <a href="#">FAQs</a>
+                                    <a href="#">Return Policy</a>
+                                    <a href="#">Shipping Policy</a>
+                                    <a href="#">Size Guide</a>
+                                    <a href="#">Help Center</a>
+                                </div>
+                                
+                                <div class="footer-col">
+                                    <h4>Contact Us</h4>
+                                    <div class="contact-info">
+                                        <p><i class='bx bx-phone'></i> <span>+91 98765 43210</span></p>
+                                        <p><i class='bx bx-envelope'></i> <span>support@stepora.com</span></p>
+                                        <p><i class='bx bx-map'></i> <span>Vadodara, Gujarat, India</span></p>
+                                    </div>
+                                </div>
+
+                                <div class="footer-col">
+                                    <h4>Subscribe to our Newsletter</h4>
+                                    <form id="newsletterForm" style="display: flex; gap: 8px; margin-top: 10px; margin-bottom: 18px;">
+                                        <input type="email" required="required" placeholder="Enter your email address" style="padding: 10px 14px; border-radius: 6px; border: 1px solid #334155; background: #0f172a; color: #fff; font-size: 0.88rem; flex: 1;"/>
+                                        <button type="submit" style="background: #f28b50; color: #fff; border: none; padding: 10px 16px; border-radius: 6px; font-weight: 700; cursor: pointer; white-space: nowrap;">Subscribe &#8594;</button>
+                                    </form>
+                                    <div style="font-size: 0.82rem; color: #94a3b8; margin-bottom: 8px;">We Accept:</div>
+                                    <div class="payment-methods" style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
+                                        <span class="pay-card visa" title="Visa"><i class='bx bxl-visa'></i></span>
+                                        <span class="pay-card mastercard" title="Mastercard"><i class='bx bxl-mastercard'></i></span>
+                                        <span class="pay-card paytm" title="Paytm">PayPal</span>
+                                        <span class="pay-card upi" title="UPI">UPI</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="footer-bottom">
+                                <p class="copyright">&#169; 2026 Stepora. All rights reserved.</p>
+                                <p style="font-size: 0.82rem; color: #94a3b8; margin: 0;">We're here to help you walk better, every day.</p>
+                                <button class="back-to-top" id="backToTopBtn" title="Back to top" aria-label="Back to top"><i class='bx bx-up-arrow-alt'></i></button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+        <!-- Stepora Contact Us Page Template -->
+        <template id="theme_stepora_contactus" inherit_id="website.contactus" name="Stepora Contact Us" priority="1">
+            <xpath expr="//div[@id='wrap']" position="replace">
+                <div id="wrap" class="oe_structure oe_empty">
+                    <div class="stepora-theme">
+                        <!-- Topbar -->
+                        <div class="topbar">
+                            <div class="topbar-left">
+                                <span><i class='bx bxs-truck'></i> Free Shipping on orders over $99</span>
+                            </div>
+                            <div class="topbar-center">
+                                <span><i class='bx bx-refresh'></i> 7 Days Easy Return</span>
+                                <span class="separator">|</span>
+                                <span><i class='bx bxs-check-shield'></i> 100% Original Products</span>
+                            </div>
+                            <div class="topbar-right">
+                                <a href="#">Track Order</a>
+                                <span class="separator">|</span>
+                                <a href="/theme_stepora/static/shop.html?openWishlist=1">Wishlist (<span id="topWishlistCount">3</span>) <i class='bx bx-heart'></i></a>
+                                <span class="separator">|</span>
+                                <a href="/web/login"><i class='bx bx-user'></i> Login / Register <i class='bx bx-chevron-down'></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Header -->
+                        <header class="header">
+                            <div class="header-inner">
+                                <a href="/" class="logo">
+                                    <div class="logo-mark">
+                                        <svg viewBox="0 0 48 32" width="38" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4 22C4 22 7 15 14 14C20 13 25 8 30 5C35 2 41 2 43 5C45 8 44 12 41 15C36 20 28 22 20 23C13 24 5 24 4 22Z" stroke="#f28b50" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6 25C14 26 26 26 38 23" stroke="#f28b50" stroke-width="3.2" stroke-linecap="round"/>
+                                            <path d="M16 14L22 20" stroke="#f28b50" stroke-width="2.2" stroke-linecap="round"/>
+                                            <path d="M22 12L28 18" stroke="#f28b50" stroke-width="2.2" stroke-linecap="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="logo-text-group">
+                                        <span class="brand-name">Stepora</span>
+                                        <span class="brand-tagline">Walk Better Live Better</span>
+                                    </div>
+                                </a>
+                                
+                                <nav class="nav-links">
+                                    <a href="/">Home</a>
+                                    <a href="/theme_stepora/static/shop.html">Shop</a>
+                                    <a href="/aboutus">About</a>
+                                    <a href="/contactus" class="active">Contact</a>
+                                </nav>
+                                
+                                <div class="search-bar">
+                                    <form action="/theme_stepora/static/shop.html" method="get" style="display:flex; width:100%; align-items:center;">
+                                        <input type="text" name="search" placeholder="Search for shoes, brands, styles..."/>
+                                        <button type="submit"><i class='bx bx-search'></i></button>
+                                    </form>
+                                </div>
+                                
+                                <div class="header-icons">
+                                    <a href="/my" class="icon-link"><i class='bx bx-user'></i></a>
+                                    <a href="/theme_stepora/static/shop.html?openWishlist=1" class="icon-link" title="Wishlist"><i class='bx bx-heart'></i><span class="badge" id="headerWishlistBadge">3</span></a>
+                                    <a href="/theme_stepora/static/shop.html?openCart=1" class="icon-link" title="Shopping Cart"><i class='bx bx-shopping-bag'></i><span class="badge" id="headerCartBadge">0</span></a>
+                                </div>
+                            </div>
+                        </header>
+
+                        <!-- Main Contact Page Body -->
+                        <main class="contact-page">
+                            <!-- Top Breadcrumb &amp; Hero Banner -->
+                            <section class="contact-banner-section">
+                                <div class="contact-banner-container">
+                                    <nav class="contact-breadcrumb" aria-label="Breadcrumb">
+                                        <a href="/">Home</a>
+                                        <span class="separator"><i class='bx bx-chevron-right'></i></span>
+                                        <span class="current">Contact Us</span>
+                                    </nav>
+
+                                    <div class="contact-banner-content">
+                                        <div class="contact-banner-text">
+                                            <span class="contact-badge-tag">GET IN TOUCH</span>
+                                            <h1 class="contact-banner-title">Contact <span class="brand-accent">Us</span></h1>
+                                            <p class="contact-banner-subtitle">We'd love to hear from you! Feel free to reach out for any queries, support or feedback.</p>
+                                        </div>
+                                        <div class="contact-banner-visual">
+                                            <div class="about-banner-img-wrap">
+                                                <img src="/theme_stepora/static/images/about_banner_shoes.jpg" alt="Stepora Premium Sneakers on Pedestal" class="about-banner-img" loading="eager"/>
+                                                <div class="about-doodle-badge" aria-hidden="true">
+                                                    <span class="about-doodle-text">Better Shoes,<br/>Better Days</span>
+                                                    <svg class="about-doodle-arrow" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10 15 C 25 10, 45 25, 45 42 M 36 36 L 45 44 L 52 35" stroke="#1e293b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- Main Content Area: 3-Column Layout -->
+                            <div class="contact-main-wrapper">
+                                <div class="contact-layout-grid">
+                                    <!-- Column 1: Our Contact Information -->
+                                    <div class="contact-info-col">
+                                        <div class="contact-section-header">
+                                            <h2>Our Contact Information</h2>
+                                            <p>You can reach us through any of the following methods. We are always here to help you.</p>
+                                        </div>
+
+                                        <div class="contact-cards-grid">
+                                            <div class="contact-info-box">
+                                                <div class="contact-box-icon">
+                                                    <i class='bx bxs-phone-call'></i>
+                                                </div>
+                                                <div class="contact-box-content">
+                                                    <h4>Phone</h4>
+                                                    <div class="contact-box-main">+91 98765 43210</div>
+                                                    <div class="contact-box-sub">Mon - Sat : 9:00 AM - 7:00 PM (IST)</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="contact-info-box">
+                                                <div class="contact-box-icon">
+                                                    <i class='bx bxs-envelope'></i>
+                                                </div>
+                                                <div class="contact-box-content">
+                                                    <h4>Email</h4>
+                                                    <div class="contact-box-main">support@stepora.com</div>
+                                                    <div class="contact-box-sub">We reply within 24 hours</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="contact-info-box">
+                                                <div class="contact-box-icon">
+                                                    <i class='bx bxs-map'></i>
+                                                </div>
+                                                <div class="contact-box-content">
+                                                    <h4>Our Address</h4>
+                                                    <div class="contact-box-main">123 Fashion Street, Rangoli Park, Vadodara - Gujarat, India</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="contact-info-box">
+                                                <div class="contact-box-icon">
+                                                    <i class='bx bxs-time-five'></i>
+                                                </div>
+                                                <div class="contact-box-content">
+                                                    <h4>Business Hours</h4>
+                                                    <div class="contact-box-main">Monday - Saturday<br/>9:00 AM - 7:00 PM</div>
+                                                    <div class="contact-box-sub">Sunday - Closed</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="contact-follow-section">
+                                            <h4>Follow Us</h4>
+                                            <p>Stay connected with us on social media for the latest updates, offers and more!</p>
+                                            <div class="contact-social-icons">
+                                                <a href="#" class="contact-social-btn" title="Facebook" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                                                <a href="#" class="contact-social-btn" title="Instagram" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                                                <a href="#" class="contact-social-btn" title="YouTube" aria-label="YouTube"><i class='bx bxl-youtube'></i></a>
+                                                <a href="#" class="contact-social-btn" title="Pinterest" aria-label="Pinterest"><i class='bx bxl-pinterest'></i></a>
+                                                <a href="#" class="contact-social-btn" title="LinkedIn" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Column 2: Send Us a Message (Form Card) -->
+                                    <div class="contact-form-card">
+                                        <div class="contact-form-header">
+                                            <h2>Send Us a Message</h2>
+                                            <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+                                        </div>
+
+                                        <form id="contactMessageForm" class="contact-form-inner">
+                                            <div class="contact-form-row">
+                                                <div class="form-field-group">
+                                                    <label for="contactName" class="form-label">Full Name <span class="required-star">*</span></label>
+                                                    <div class="form-input-wrap">
+                                                        <i class='bx bx-user'></i>
+                                                        <input type="text" id="contactName" name="name" required="required" placeholder="Enter your full name"/>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-field-group">
+                                                    <label for="contactEmail" class="form-label">Email Address <span class="required-star">*</span></label>
+                                                    <div class="form-input-wrap">
+                                                        <i class='bx bx-envelope'></i>
+                                                        <input type="email" id="contactEmail" name="email" required="required" placeholder="you@example.com"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="contact-form-row">
+                                                <div class="form-field-group">
+                                                    <label for="contactPhone" class="form-label">Phone Number</label>
+                                                    <div class="form-input-wrap">
+                                                        <i class='bx bx-phone'></i>
+                                                        <input type="tel" id="contactPhone" name="phone" placeholder="+91 98765 43210"/>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-field-group">
+                                                    <label for="contactSubject" class="form-label">Subject <span class="required-star">*</span></label>
+                                                    <div class="form-input-wrap">
+                                                        <i class='bx bx-tag-alt'></i>
+                                                        <select id="contactSubject" name="subject" required="required">
+                                                            <option value="" disabled="disabled" selected="selected">Select a topic</option>
+                                                            <option value="order">Order Status &amp; Tracking</option>
+                                                            <option value="product">Product Inquiry &amp; Sizing</option>
+                                                            <option value="returns">Returns, Refund &amp; Exchange</option>
+                                                            <option value="feedback">General Feedback &amp; Suggestions</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-field-group">
+                                                <label for="contactMessage" class="form-label">Message <span class="required-star">*</span></label>
+                                                <div class="form-input-wrap">
+                                                    <i class='bx bx-edit' style="top: 14px;"></i>
+                                                    <textarea id="contactMessage" name="message" required="required" placeholder="Type your message here..."></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-agree-wrap">
+                                                <input type="checkbox" id="contactAgree" required="required"/>
+                                                <label for="contactAgree">I agree to the <a href="javascript:void(0)">Terms &amp; Conditions</a> and <a href="javascript:void(0)">Privacy Policy</a></label>
+                                            </div>
+
+                                            <button type="submit" class="btn-send-message">
+                                                <i class='bx bxs-paper-plane'></i>
+                                                <span>Send Message</span>
+                                                <i class='bx bx-right-arrow-alt'></i>
+                                            </button>
+                                        </form>
+                                    </div>
+
+                                    <!-- Column 3: Find Us on Map & FAQs -->
+                                    <div class="contact-side-col">
+                                        <div class="contact-map-box">
+                                            <div class="contact-map-header">
+                                                <h3>Find Us on Map</h3>
+                                            </div>
+                                            <div class="contact-map-canvas">
+                                                <iframe 
+                                                    class="contact-map-iframe" 
+                                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118147.68202029323!2d73.10304603417969!3d22.322102600000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc8ab91a3ddab%3A0xac39d3bfe1473fb8!2sVadodara%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                                                    allowfullscreen="" 
+                                                    loading="lazy" 
+                                                    referrerpolicy="no-referrer-when-downgrade" 
+                                                    title="Stepora Store Location Map">
+                                                </iframe>
+                                                
+                                                <div class="map-store-badge">
+                                                    <h5>Stepora Store</h5>
+                                                    <p>123 Fashion Street, Rangoli Park, Vadodara - 390001</p>
+                                                    <a href="https://maps.google.com/?q=Vadodara+Gujarat" target="_blank" rel="noopener">View larger map &#8594;</a>
+                                                </div>
+
+                                                <div class="map-center-pin" aria-hidden="true">
+                                                    <i class='bx bxs-map'></i>
+                                                    <div class="map-pin-label">
+                                                        <span class="map-pin-name">Stepora Store</span>
+                                                        <span class="map-pin-sub">Vadodara, Gujarat</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="contact-faq-box">
+                                            <div class="contact-faq-header">
+                                                <h3>Frequently Asked Questions</h3>
+                                                <a href="javascript:void(0)" class="faq-view-all">View All <i class='bx bx-right-arrow-alt'></i></a>
+                                            </div>
+
+                                            <div class="faq-accordion-list">
+                                                <div class="faq-item active">
+                                                    <button type="button" class="faq-question-btn" aria-expanded="true">
+                                                        <span>How can I track my order?</span>
+                                                        <i class='bx bx-plus faq-icon-indicator'></i>
+                                                    </button>
+                                                    <div class="faq-answer-pane" style="max-height: 120px;">
+                                                        <div class="faq-answer-inner">
+                                                            Once your order is shipped, you will receive an SMS and email notification containing the carrier name, tracking ID, and real-time tracking link.
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="faq-item">
+                                                    <button type="button" class="faq-question-btn" aria-expanded="false">
+                                                        <span>What is your return policy?</span>
+                                                        <i class='bx bx-plus faq-icon-indicator'></i>
+                                                    </button>
+                                                    <div class="faq-answer-pane">
+                                                        <div class="faq-answer-inner">
+                                                            We offer a hassle-free 7-day return and exchange policy on all unworn footwear in its original shoe box with packaging intact.
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="faq-item">
+                                                    <button type="button" class="faq-question-btn" aria-expanded="false">
+                                                        <span>Do you offer international shipping?</span>
+                                                        <i class='bx bx-plus faq-icon-indicator'></i>
+                                                    </button>
+                                                    <div class="faq-answer-pane">
+                                                        <div class="faq-answer-inner">
+                                                            Yes, Stepora ships to over 50+ countries worldwide with express courier partners and full transit insurance.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </main>
+
+                        <!-- Stepora Dark Footer -->
+                        <footer class="footer">
+                            <div class="footer-container">
+                                <div class="footer-col">
+                                    <div class="logo white">
+                                        <i class='bx bxs-shoe' style="font-size: 2.2rem; color: #f28b50;"></i>
+                                        <span style="font-weight: 800; font-size: 1.6rem; margin-left: 0.5rem; color: #ffffff;">Stepora</span>
+                                    </div>
+                                    <p>Your one-stop destination for premium footwear. We bring you the best brands at the best prices.</p>
+                                    <div class="social-links">
+                                        <a href="#" class="social-btn facebook" title="Facebook" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                                        <a href="#" class="social-btn instagram" title="Instagram" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                                        <a href="#" class="social-btn youtube" title="YouTube" aria-label="YouTube"><i class='bx bxl-youtube'></i></a>
+                                        <a href="#" class="social-btn pinterest" title="Pinterest" aria-label="Pinterest"><i class='bx bxl-pinterest'></i></a>
+                                        <a href="#" class="social-btn linkedin" title="LinkedIn" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                                    </div>
+                                </div>
+                                
+                                <div class="footer-col">
+                                    <h4>Quick Links</h4>
+                                    <a href="/">Home</a>
+                                    <a href="/theme_stepora/static/shop.html">Shop</a>
+                                    <a href="/aboutus">About Us</a>
+                                    <a href="/contactus" style="color: #f28b50; font-weight: 600;">Contact Us</a>
+                                    <a href="#">Track Order</a>
+                                </div>
+                                
+                                <div class="footer-col">
+                                    <h4>Categories</h4>
+                                    <a href="/theme_stepora/static/shop.html?category=Running">Running</a>
+                                    <a href="/theme_stepora/static/shop.html?category=Casual">Casual</a>
+                                    <a href="/theme_stepora/static/shop.html?category=Formal">Formal</a>
+                                    <a href="/theme_stepora/static/shop.html?category=Sports">Sports</a>
+                                    <a href="/theme_stepora/static/shop.html?category=Boots">Boots</a>
+                                    <a href="/theme_stepora/static/shop.html?category=Sneakers">Sneakers</a>
+                                </div>
+                                
+                                <div class="footer-col">
+                                    <h4>Customer Service</h4>
+                                    <a href="#">FAQs</a>
+                                    <a href="#">Return Policy</a>
+                                    <a href="#">Shipping Policy</a>
+                                    <a href="#">Size Guide</a>
+                                    <a href="#">Help Center</a>
+                                </div>
+                                
+                                <div class="footer-col">
+                                    <h4>Contact Us</h4>
+                                    <div class="contact-info">
+                                        <p><i class='bx bx-phone'></i> <span>+91 98765 43210</span></p>
+                                        <p><i class='bx bx-envelope'></i> <span>support@stepora.com</span></p>
+                                        <p><i class='bx bx-map'></i> <span>Vadodara, Gujarat, India</span></p>
+                                    </div>
+                                </div>
+
+                                <div class="footer-col">
+                                    <h4>Subscribe to our Newsletter</h4>
+                                    <form id="newsletterForm" style="display: flex; gap: 8px; margin-top: 10px; margin-bottom: 18px;">
+                                        <input type="email" required="required" placeholder="Enter your email address" style="padding: 10px 14px; border-radius: 6px; border: 1px solid #334155; background: #0f172a; color: #fff; font-size: 0.88rem; flex: 1;"/>
+                                        <button type="submit" style="background: #f28b50; color: #fff; border: none; padding: 10px 16px; border-radius: 6px; font-weight: 700; cursor: pointer; white-space: nowrap;">Subscribe &#8594;</button>
+                                    </form>
+                                    <div style="font-size: 0.82rem; color: #94a3b8; margin-bottom: 8px;">We Accept:</div>
+                                    <div class="payment-methods" style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
+                                        <span class="pay-card visa" title="Visa"><i class='bx bxl-visa'></i></span>
+                                        <span class="pay-card mastercard" title="Mastercard"><i class='bx bxl-mastercard'></i></span>
+                                        <span class="pay-card paytm" title="Paytm">PayPal</span>
+                                        <span class="pay-card upi" title="UPI">UPI</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="footer-bottom">
+                                <p class="copyright">&#169; 2026 Stepora. All rights reserved.</p>
+                                <p style="font-size: 0.82rem; color: #94a3b8; margin: 0;">We're here to help you walk better, every day.</p>
+                                <button class="back-to-top" id="backToTopBtn" title="Back to top" aria-label="Back to top"><i class='bx bx-up-arrow-alt'></i></button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>

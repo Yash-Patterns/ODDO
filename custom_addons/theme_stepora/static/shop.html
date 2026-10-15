@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Our Latest Collection - Stepora Footwear</title>
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!-- Google Fonts Inter & Caveat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="style.css?v=2.5">
+</head>
+<body class="shop-page">
+
+    <!-- Top Announcement Bar -->
+    <div class="topbar">
+        <div class="topbar-left">
+            <span><i class='bx bxs-truck'></i> Free Shipping on orders over $99</span>
+            <span class="sep">•</span>
+            <span><i class='bx bx-refresh'></i> 7 Days Easy Return</span>
+            <span class="sep">•</span>
+            <span><i class='bx bxs-check-shield'></i> 100% Original Products</span>
+            <span class="sep">•</span>
+            <span><i class='bx bxs-lock-alt'></i> Secure Payments</span>
+        </div>
+        <div class="topbar-right">
+            <a href="#">Track Order</a>
+            <span class="separator">|</span>
+            <a href="javascript:void(0)" class="top-wishlist-link" id="topWishlistBtn">Wishlist (<span id="topWishlistCount">0</span>) <i class='bx bx-heart'></i></a>
+            <span class="separator">|</span>
+            <a href="#" class="top-user-link"><i class='bx bx-user'></i> Login / Register <i class='bx bx-chevron-down'></i></a>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="/" class="logo">
+                <div class="logo-mark">
+                    <svg viewBox="0 0 48 32" width="38" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 22C4 22 7 15 14 14C20 13 25 8 30 5C35 2 41 2 43 5C45 8 44 12 41 15C36 20 28 22 20 23C13 24 5 24 4 22Z" stroke="#f28b50" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 25C14 26 26 26 38 23" stroke="#f28b50" stroke-width="3.2" stroke-linecap="round"/>
+                        <path d="M16 14L22 20" stroke="#f28b50" stroke-width="2.2" stroke-linecap="round"/>
+                        <path d="M22 12L28 18" stroke="#f28b50" stroke-width="2.2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="logo-text-group">
+                    <span class="brand-name">Stepora</span>
+                    <span class="brand-tagline">Walk Better Live Better</span>
+                </div>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="shop.html" class="active">Shop</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            
+            <div class="search-bar">
+                <input type="text" id="shopSearchInput" placeholder="Search for shoes, brands, styles...">
+                <button type="button" id="shopSearchBtn" aria-label="Search"><i class='bx bx-search'></i></button>
+            </div>
+
+            <div class="header-icons">
+                <a href="javascript:void(0)" class="icon-link" id="headerUserBtn" title="My Account"><i class='bx bx-user'></i></a>
+                <a href="javascript:void(0)" class="icon-link" id="headerWishlistBtn" title="View Wishlist">
+                    <i class='bx bx-heart'></i>
+                    <span class="badge" id="headerWishlistBadge">0</span>
+                </a>
+                <a href="javascript:void(0)" class="icon-link" id="headerCartBtn" title="Shopping Cart">
+                    <i class='bx bx-shopping-bag'></i>
+                    <span class="badge" id="headerCartBadge">0</span>
+                </a>
+            </div>
+
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <i class='bx bx-menu'></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Shop Hero Banner -->
+    <section class="shop-hero-banner">
+        <div class="shop-hero-container">
+            <div class="shop-hero-left">
+                <div class="breadcrumb">
+                    <a href="/">Home</a>
+                    <span class="bc-sep">&gt;</span>
+                    <span class="bc-current">Shop</span>
+                </div>
+                <div class="hero-badge-tag">OUR COLLECTION</div>
+                <h1 class="shop-hero-title">Shop Our Latest Collection</h1>
+                <p class="shop-hero-desc">Discover the best collection of premium shoes for men, women and kids. Find your perfect pair with great quality and latest trends.</p>
+            </div>
+            
+            <div class="shop-hero-right">
+                <div class="hero-shoe-art">
+                    <div class="hero-art-bg-circle"></div>
+                    <div class="hero-art-leaf left-leaf"></div>
+                    <div class="hero-art-leaf right-leaf"></div>
+                    <img src="images/hero_shoe.jpg" alt="Latest Collection Sneaker" class="hero-floating-shoe" onerror="this.src='https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=900&auto=format&fit=crop&q=85';">
+                    <div class="hero-doodle-badge">
+                        <span class="doodle-text">Step into<br>Better Style</span>
+                        <svg class="doodle-arrow" viewBox="0 0 50 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 30C15 35 30 25 40 10" stroke="#1f2937" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="2 3"/>
+                            <path d="M32 8L42 9L38 18" stroke="#1f2937" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Shop Catalog Section -->
+    <main class="shop-catalog-section">
+        <div class="shop-catalog-container">
+            
+            <!-- Mobile Filter Drawer Backdrop & Button -->
+            <button class="mobile-filter-btn" id="mobileFilterOpenBtn">
+                <i class='bx bx-slider-alt'></i> Filter Products (<span id="activeFilterCount">0</span>)
+            </button>
+            <div class="filter-backdrop" id="filterBackdrop"></div>
+
+            <!-- Left Filter Sidebar -->
+            <aside class="filter-sidebar" id="filterSidebar">
+                <div class="filter-header">
+                    <h3>Filter Products</h3>
+                    <div class="filter-header-actions">
+                        <button type="button" class="clear-all-btn" id="clearAllFiltersBtn">
+                            Clear All <i class='bx bx-refresh'></i>
+                        </button>
+                        <button type="button" class="mobile-filter-close" id="mobileFilterCloseBtn" aria-label="Close filters">
+                            <i class='bx bx-x'></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Category Filter Group -->
+                <div class="filter-group collapsible open">
+                    <div class="filter-group-title" onclick="toggleFilterGroup(this)">
+                        <span>Categories</span>
+                        <i class='bx bx-chevron-up toggle-icon'></i>
+                    </div>
+                    <div class="filter-group-content">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" name="category" value="Running">
+                            <span class="checkmark"></span>
+                            <span class="label-text">Running</span>
+                            <span class="count">(6)</span>
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" name="category" value="Casual">
+                            <span class="checkmark"></span>
+                            <span class="label-text">Casual</span>
+                            <span class="count">(5)</span>
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" name="category" value="Sneakers">
+                            <span class="checkmark"></span>
+                            <span class="label-text">Sneakers</span>
+                            <span class="count">(5)</span>
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" name="category" value="Sports">
+                            <span class="checkmark"></span>
+                            <span class="label-text">Sports</span>
+                            <span class="count">(2)</span>
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" name="category" value="Boots">
+                            <span class="checkmark"></span>
+                            <span class="label-text">Boots</span>
+                            <span class="count">(2)</span>
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" name="category" value="Formal">
+                            <span class="checkmark"></span>
+                            <span class="label-text">Formal</span>
+                            <span class="count">(2)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Price Range Filter Group -->
+                <div class="filter-group collapsible open">
+                    <div class="filter-group-title" onclick="toggleFilterGroup(this)">
+                        <span>Price Range</span>
+                        <i class='bx bx-chevron-up toggle-icon'></i>
+                    </div>
+                    <div class="filter-group-content">
+                        <div class="price-slider-wrapper">
+                            <div class="slider-track" id="sliderTrack"></div>
+                            <input type="range" min="0" max="300" value="0" id="sliderMin" class="range-thumb range-thumb-min">
+                            <input type="range" min="0" max="300" value="300" id="sliderMax" class="range-thumb range-thumb-max">
+                        </div>
+                        <div class="price-inputs-row">
+                            <div class="price-input-box">
+                                <span class="currency">$</span>
+                                <input type="number" id="minPriceInput" value="0" min="0" max="300">
+                            </div>
+                            <span class="price-dash">—</span>
+                            <div class="price-input-box">
+                                <span class="currency">$</span>
+                                <input type="number" id="maxPriceInput" value="300" min="0" max="300">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Brand Filter Group -->
+                <div class="filter-group collapsible open">
+                    <div class="filter-group-title" onclick="toggleFilterGroup(this)">
+                        <span>Brand</span>
+                        <i class='bx bx-chevron-up toggle-icon'></i>
+                    </div>
+                    <div class="filter-group-content">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" name="brand" value="Nike">
+                            <span class="checkmark"></span>
+                            <span class="label-text">Nike</span>
+                            <span class="count">(4)</span>
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" name="brand" value="Adidas">
+                            <span class="checkmark"></span>
+                            <span class="label-text">Adidas</span>
+                            <span class="count">(3)</span>
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" name="brand" value="Puma">
+                            <span class="checkmark"></span>
+                            <span class="label-text">Puma</span>
+                            <span class="count">(2)</span>
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" name="brand" value="Woodland">
+                            <span class="checkmark"></span>
+                            <span class="label-text">Woodland</span>
+                            <span class="count">(2)</span>
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" name="brand" value="Reebok">
+                            <span class="checkmark"></span>
+                            <span class="label-text">Reebok</span>
+                            <span class="count">(2)</span>
+                        </label>
+                        <a href="javascript:void(0)" class="show-more-brands" id="showMoreBrandsBtn">+ Show More Brands</a>
+                        <div class="extra-brands" id="extraBrands" style="display:none;">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="brand" value="New Balance">
+                                <span class="checkmark"></span>
+                                <span class="label-text">New Balance</span>
+                                <span class="count">(2)</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="brand" value="Converse">
+                                <span class="checkmark"></span>
+                                <span class="label-text">Converse</span>
+                                <span class="count">(1)</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="brand" value="Skechers">
+                                <span class="checkmark"></span>
+                                <span class="label-text">Skechers</span>
+                                <span class="count">(2)</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="brand" value="Vans">
+                                <span class="checkmark"></span>
+                                <span class="label-text">Vans</span>
+                                <span class="count">(1)</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="brand" value="Asics">
+                                <span class="checkmark"></span>
+                                <span class="label-text">Asics</span>
+                                <span class="count">(1)</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="brand" value="Timberland">
+                                <span class="checkmark"></span>
+                                <span class="label-text">Timberland</span>
+                                <span class="count">(1)</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="brand" value="On">
+                                <span class="checkmark"></span>
+                                <span class="label-text">On</span>
+                                <span class="count">(1)</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Size Filter Group -->
+                <div class="filter-group collapsible open">
+                    <div class="filter-group-title" onclick="toggleFilterGroup(this)">
+                        <span>Size</span>
+                        <i class='bx bx-chevron-up toggle-icon'></i>
+                    </div>
+                    <div class="filter-group-content">
+                        <div class="size-chips-grid">
+                            <button type="button" class="size-chip" data-size="6">6</button>
+                            <button type="button" class="size-chip" data-size="7">7</button>
+                            <button type="button" class="size-chip" data-size="8">8</button>
+                            <button type="button" class="size-chip" data-size="9">9</button>
+                            <button type="button" class="size-chip" data-size="10">10</button>
+                            <button type="button" class="size-chip" data-size="11">11</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Color Filter Group -->
+                <div class="filter-group collapsible open">
+                    <div class="filter-group-title" onclick="toggleFilterGroup(this)">
+                        <span>Color</span>
+                        <i class='bx bx-chevron-up toggle-icon'></i>
+                    </div>
+                    <div class="filter-group-content">
+                        <div class="color-swatches-row">
+                            <button type="button" class="color-swatch-circle black" data-color="black" title="Black" aria-label="Black"></button>
+                            <button type="button" class="color-swatch-circle white" data-color="white" title="White" aria-label="White"></button>
+                            <button type="button" class="color-swatch-circle blue" data-color="blue" title="Blue" aria-label="Blue"></button>
+                            <button type="button" class="color-swatch-circle red" data-color="red" title="Red" aria-label="Red"></button>
+                            <button type="button" class="color-swatch-circle green" data-color="green" title="Green" aria-label="Green"></button>
+                            <button type="button" class="color-swatch-circle orange" data-color="orange" title="Orange" aria-label="Orange"></button>
+                            <a href="javascript:void(0)" class="more-colors-btn" onclick="resetColorFilter()">Clear Color</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar Promo Banner -->
+                <div class="sidebar-promo-card">
+                    <div class="promo-shoe-thumb">
+                        <img src="images/promo_sneaker.jpg" alt="New Arrivals" onerror="this.src='https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&auto=format&fit=crop&q=85';">
+                    </div>
+                    <div class="promo-content">
+                        <h4>New Arrivals</h4>
+                        <p class="promo-discount">Up to 50% Off</p>
+                        <a href="javascript:void(0)" onclick="resetAllFilters()" class="promo-explore-btn">Explore All <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+
+            </aside>
+
+            <!-- Right Catalog Content -->
+            <section class="products-catalog-main">
+                
+                <!-- Catalog Toolbar -->
+                <div class="catalog-toolbar">
+                    <div class="toolbar-left">
+                        <span class="products-count-text" id="productsCountText">Showing 1-22 of 22 products</span>
+                    </div>
+                    
+                    <div class="toolbar-right">
+                        <div class="sort-wrapper">
+                            <label for="sortSelect">Sort by:</label>
+                            <div class="custom-select-box">
+                                <select id="sortSelect">
+                                    <option value="price-low" selected>Price: Low to High</option>
+                                    <option value="popular">Popular</option>
+                                    <option value="price-high">Price: High to Low</option>
+                                    <option value="rating">Rating</option>
+                                    <option value="newest">Newest</option>
+                                </select>
+                                <i class='bx bx-chevron-down'></i>
+                            </div>
+                        </div>
+
+                        <div class="view-switchers">
+                            <button type="button" class="view-btn grid-view-btn active" id="gridViewBtn" title="Grid View" aria-label="Grid View">
+                                <i class='bx bxs-grid'></i>
+                            </button>
+                            <button type="button" class="view-btn list-view-btn" id="listViewBtn" title="List View" aria-label="List View">
+                                <i class='bx bx-list-ul'></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Products Grid (Dynamic 22 Cards) -->
+                <div class="products-grid" id="productsGrid">
+                    <!-- Injected dynamically via script.js -->
+                </div>
+
+                <!-- Empty State Message (Hidden by default) -->
+                <div class="no-products-message" id="noProductsMessage" style="display: none;">
+                    <i class='bx bx-search-alt'></i>
+                    <h3>No shoes found</h3>
+                    <p>Try clearing your category, price or brand filters to see all 22 products.</p>
+                    <button type="button" class="btn-primary" onclick="resetAllFilters()">Show All 22 Products</button>
+                </div>
+
+                <!-- Pagination -->
+                <nav class="shop-pagination" aria-label="Products pagination">
+                    <button type="button" class="page-nav prev" aria-label="Previous Page"><i class='bx bx-chevron-left'></i></button>
+                    <button type="button" class="page-num active">1</button>
+                    <button type="button" class="page-num">2</button>
+                    <button type="button" class="page-num">3</button>
+                    <button type="button" class="page-num">4</button>
+                    <button type="button" class="page-num">5</button>
+                    <span class="page-dots">...</span>
+                    <button type="button" class="page-num">10</button>
+                    <button type="button" class="page-nav next" aria-label="Next Page"><i class='bx bx-chevron-right'></i></button>
+                </nav>
+
+            </section>
+        </div>
+    </main>
+
+    <!-- Slide-Out Cart Sidebar Drawer -->
+    <div class="drawer-backdrop" id="cartDrawerBackdrop"></div>
+    <aside class="slide-drawer" id="cartDrawer">
+        <div class="drawer-header">
+            <div class="drawer-title-group">
+                <i class='bx bx-shopping-bag drawer-icon'></i>
+                <h3>Shopping Cart (<span id="cartDrawerCount">0</span>)</h3>
+            </div>
+            <button type="button" class="drawer-close-btn" id="cartDrawerCloseBtn" aria-label="Close cart">
+                <i class='bx bx-x'></i>
+            </button>
+        </div>
+        <div class="drawer-body" id="cartDrawerBody">
+            <!-- Dynamic Cart Items injected via script.js -->
+        </div>
+        <div class="drawer-footer" id="cartDrawerFooter">
+            <div class="drawer-summary-row">
+                <span>Subtotal:</span>
+                <span class="summary-val" id="cartDrawerSubtotal">$0.00</span>
+            </div>
+            <div class="drawer-summary-row">
+                <span>Shipping:</span>
+                <span class="summary-val free-ship">FREE</span>
+            </div>
+            <div class="drawer-summary-row total-row">
+                <span>Total:</span>
+                <span class="summary-val total-val" id="cartDrawerTotal">$0.00</span>
+            </div>
+            <button type="button" class="drawer-checkout-btn" id="cartCheckoutBtn">
+                Proceed to Checkout <i class='bx bx-right-arrow-alt'></i>
+            </button>
+            <button type="button" class="drawer-continue-btn" id="cartContinueBtn">
+                Continue Shopping
+            </button>
+        </div>
+    </aside>
+
+    <!-- Slide-Out Wishlist Sidebar Drawer -->
+    <div class="drawer-backdrop" id="wishlistDrawerBackdrop"></div>
+    <aside class="slide-drawer" id="wishlistDrawer">
+        <div class="drawer-header">
+            <div class="drawer-title-group">
+                <i class='bx bxs-heart drawer-icon' style="color:#ef4444;"></i>
+                <h3>My Saved Shoes (<span id="wishlistDrawerCount">0</span>)</h3>
+            </div>
+            <button type="button" class="drawer-close-btn" id="wishlistDrawerCloseBtn" aria-label="Close wishlist">
+                <i class='bx bx-x'></i>
+            </button>
+        </div>
+        <div class="drawer-body" id="wishlistDrawerBody">
+            <!-- Dynamic Wishlist Items injected via script.js -->
+        </div>
+        <div class="drawer-footer" id="wishlistDrawerFooter">
+            <button type="button" class="drawer-checkout-btn" id="moveAllWishlistToCartBtn">
+                <i class='bx bx-cart'></i> Move All to Cart
+            </button>
+            <button type="button" class="drawer-continue-btn" id="wishlistContinueBtn">
+                Continue Shopping
+            </button>
+        </div>
+    </aside>
+
+    <!-- Quick View Modal -->
+    <div class="quick-view-modal" id="quickViewModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button type="button" class="modal-close" id="modalCloseBtn" aria-label="Close modal">
+                <i class='bx bx-x'></i>
+            </button>
+            <div class="modal-body">
+                <div class="modal-img-col">
+                    <span class="modal-badge discount" id="modalBadge">-20%</span>
+                    <img src="images/nike_pegasus.jpg" alt="Shoe Preview" id="modalImg" class="modal-preview-img">
+                </div>
+                <div class="modal-info-col">
+                    <span class="modal-category" id="modalCategory">Running Shoes</span>
+                    <h2 class="modal-title" id="modalTitle">Nike Air Zoom Pegasus 40</h2>
+                    <div class="modal-rating">
+                        <div class="stars">
+                            <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                        </div>
+                        <span id="modalRatingText">4.8 (120 reviews)</span>
+                    </div>
+                    <div class="modal-price">
+                        <span class="modal-current-price" id="modalCurrentPrice">$79.99</span>
+                        <span class="modal-original-price" id="modalOriginalPrice">$99.99</span>
+                    </div>
+                    <p class="modal-desc" id="modalDesc">
+                        Engineered for runners seeking responsive cushioning and secure support. Features dual Zoom Air units and React foam for a smooth, springy transition.
+                    </p>
+                    <div class="modal-sizes">
+                        <label>Select Size:</label>
+                        <div class="size-chips-grid modal-size-chips">
+                            <button type="button" class="size-chip" data-size="6">6</button>
+                            <button type="button" class="size-chip" data-size="7">7</button>
+                            <button type="button" class="size-chip active" data-size="8">8</button>
+                            <button type="button" class="size-chip" data-size="9">9</button>
+                            <button type="button" class="size-chip" data-size="10">10</button>
+                            <button type="button" class="size-chip" data-size="11">11</button>
+                        </div>
+                    </div>
+                    <div class="modal-qty-actions">
+                        <div class="qty-counter">
+                            <button type="button" id="qtyMinusBtn">-</button>
+                            <input type="number" id="qtyInput" value="1" min="1" max="10" readonly>
+                            <button type="button" id="qtyPlusBtn">+</button>
+                        </div>
+                        <button type="button" class="btn-primary modal-add-cart-btn" id="modalAddToCartBtn">
+                            <i class='bx bx-cart'></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div class="shop-toast" id="shopToast">
+        <i class='bx bx-check-circle'></i>
+        <span id="toastMessage">Item added to cart!</span>
+    </div>
+
+    <!-- Footer (100% Matching Design) -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col brand-col">
+                <a href="/" class="logo white">
+                    <div class="logo-mark">
+                        <svg viewBox="0 0 48 32" width="38" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 22C4 22 7 15 14 14C20 13 25 8 30 5C35 2 41 2 43 5C45 8 44 12 41 15C36 20 28 22 20 23C13 24 5 24 4 22Z" stroke="#f28b50" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6 25C14 26 26 26 38 23" stroke="#f28b50" stroke-width="3.2" stroke-linecap="round"/>
+                            <path d="M16 14L22 20" stroke="#f28b50" stroke-width="2.2" stroke-linecap="round"/>
+                            <path d="M22 12L28 18" stroke="#f28b50" stroke-width="2.2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="logo-text-group">
+                        <span class="brand-name white-text">Stepora</span>
+                        <span class="brand-tagline">Walk Better Live Better</span>
+                    </div>
+                </a>
+                <p class="footer-desc">Stepora is your one-stop destination for premium footwear. We bring you the best brands at the best prices.</p>
+                <div class="social-links">
+                    <a href="#" class="social-btn facebook" title="Facebook"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="social-btn instagram" title="Instagram"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" class="social-btn youtube" title="YouTube"><i class='bx bxl-youtube'></i></a>
+                    <a href="#" class="social-btn pinterest" title="Pinterest"><i class='bx bxl-pinterest'></i></a>
+                    <a href="#" class="social-btn linkedin" title="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="shop.html" class="active-footer-link">Shop</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="#">Track Order</a>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Categories</h4>
+                <a href="shop.html?category=Running">Running</a>
+                <a href="shop.html?category=Casual">Casual</a>
+                <a href="shop.html?category=Formal">Formal</a>
+                <a href="shop.html?category=Sports">Sports</a>
+                <a href="shop.html?category=Boots">Boots</a>
+                <a href="shop.html?category=Sneakers">Sneakers</a>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Customer Service</h4>
+                <a href="#">FAQs</a>
+                <a href="#">Return Policy</a>
+                <a href="#">Shipping Policy</a>
+                <a href="#">Size Guide</a>
+                <a href="#">Help Center</a>
+            </div>
+            
+            <div class="footer-col contact-col">
+                <h4>Contact Us</h4>
+                <div class="contact-info">
+                    <p><i class='bx bx-phone'></i> <span>+91 98765 43210</span></p>
+                    <p><i class='bx bx-envelope'></i> <span>support@stepora.com</span></p>
+                    <p><i class='bx bx-map'></i> <span>Vadodara, Gujarat, India</span></p>
+                </div>
+            </div>
+
+            <div class="footer-col newsletter-col">
+                <h4>Subscribe to our Newsletter</h4>
+                <form class="footer-newsletter-form" id="footerNewsForm">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="newsletter-submit-btn">Subscribe <i class='bx bx-right-arrow-alt'></i></button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p class="copyright">&#169; 2026 Stepora. All rights reserved.</p>
+            <div class="payment-methods">
+                <span class="pay-title">We Accept:</span>
+                <span class="pay-card visa" title="Visa"><i class='bx bxl-visa'></i></span>
+                <span class="pay-card mastercard" title="Mastercard"><i class='bx bxl-mastercard'></i></span>
+                <span class="pay-card paytm" title="Paytm">Paytm</span>
+                <span class="pay-card upi" title="UPI">UPI</span>
+            </div>
+            <button class="back-to-top" id="backToTopBtn" title="Back to top" aria-label="Back to top"><i class='bx bx-up-arrow-alt'></i></button>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js?v=2.5"></script>
+</body>
+</html>

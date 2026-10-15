@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stepora - Step Up Your Style</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Boxicons for icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <!-- Topbar -->
+    <div class="topbar">
+        <div class="topbar-left">
+            <span><i class='bx bxs-truck'></i> Free Shipping on orders over ₹999</span>
+        </div>
+        <div class="topbar-center">
+            <span><i class='bx bx-refresh'></i> 7 Days Easy Return</span>
+            <span class="separator">|</span>
+            <span><i class='bx bxs-check-shield'></i> 100% Original Products</span>
+        </div>
+        <div class="topbar-right">
+            <a href="#">Track Order</a>
+            <span class="separator">|</span>
+            <a href="#">Wishlist <i class='bx bx-heart'></i></a>
+            <span class="separator">|</span>
+            <a href="#">Login / Register</a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <div class="logo-mark">
+                    <svg viewBox="0 0 48 32" width="38" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 22C4 22 7 15 14 14C20 13 25 8 30 5C35 2 41 2 43 5C45 8 44 12 41 15C36 20 28 22 20 23C13 24 5 24 4 22Z" stroke="#f28b50" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 25C14 26 26 26 38 23" stroke="#f28b50" stroke-width="3.2" stroke-linecap="round"/>
+                        <path d="M16 14L22 20" stroke="#f28b50" stroke-width="2.2" stroke-linecap="round"/>
+                        <path d="M22 12L28 18" stroke="#f28b50" stroke-width="2.2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="logo-text-group">
+                    <span class="brand-name">Stepora</span>
+                    <span class="brand-tagline">Walk Better Live Better</span>
+                </div>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        
+        <div class="search-bar">
+            <input type="text" placeholder="Search for shoes...">
+            <button><i class='bx bx-search'></i></button>
+        </div>
+        
+        <div class="header-icons">
+            <a href="#" class="icon-link" title="Account"><i class='bx bx-user'></i></a>
+            <a href="shop.html?openWishlist=1" class="icon-link" title="Wishlist">
+                <i class='bx bx-heart'></i>
+                <span class="badge">0</span>
+            </a>
+            <a href="shop.html?openCart=1" class="icon-link" title="Shopping Cart">
+                <i class='bx bx-shopping-bag'></i>
+                <span class="badge">0</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section with Dynamic Auto-Slider -->
+    <section class="hero" id="heroSlider">
+        <button type="button" class="nav-btn prev" id="heroPrevBtn" aria-label="Previous Slide"><i class='bx bx-chevron-left'></i></button>
+        <button type="button" class="nav-btn next" id="heroNextBtn" aria-label="Next Slide"><i class='bx bx-chevron-right'></i></button>
+
+        <div class="hero-slides-wrapper">
+            <!-- Slide 1: Step Up Your Style (Mockup Target) -->
+            <div class="hero-slide active" data-slide="0">
+                <div class="hero-content">
+                    <span class="subtitle"><i class='bx bxs-zap'></i> NEW COLLECTION 2026</span>
+                    <h1>Step Up<br>Your Style</h1>
+                    <p>Discover premium footwear for every journey. From casual sneakers to performance shoes, find your perfect pair at Stepora.</p>
+                    <div class="hero-cta-group">
+                        <a href="shop.html" class="btn-primary">Shop Now <i class='bx bx-right-arrow-alt'></i></a>
+                        <a href="shop.html?category=Running" class="btn-secondary-hero">Explore Running</a>
+                    </div>
+                    <div class="carousel-dots">
+                        <span class="dot active" data-index="0" title="Slide 1"></span>
+                        <span class="dot" data-index="1" title="Slide 2"></span>
+                        <span class="dot" data-index="2" title="Slide 3"></span>
+                        <span class="dot" data-index="3" title="Slide 4"></span>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-card-frame">
+                        <img src="images/hero_slide_1.jpg" alt="Stepora Air Flow Sneaker" class="slide-shoe-img" loading="eager">
+                        <div class="floating-text">
+                            <span>Comfort Meets Style</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2: High-Performance Athletic & Running -->
+            <div class="hero-slide" data-slide="1">
+                <div class="hero-content">
+                    <span class="subtitle"><i class='bx bxs-hot'></i> TRENDING NOW 2026</span>
+                    <h1>Engineered For Movement,<br>Designed For Life.</h1>
+                    <p>Discover ultra-responsive cushioning, breathable ergonomics, and lightweight agility crafted for every stride of your journey.</p>
+                    <div class="hero-cta-group">
+                        <a href="shop.html" class="btn-primary">Shop Collection <i class='bx bx-right-arrow-alt'></i></a>
+                        <a href="shop.html?category=Casual" class="btn-secondary-hero">View Casuals</a>
+                    </div>
+                    <div class="carousel-dots">
+                        <span class="dot" data-index="0" title="Slide 1"></span>
+                        <span class="dot active" data-index="1" title="Slide 2"></span>
+                        <span class="dot" data-index="2" title="Slide 3"></span>
+                        <span class="dot" data-index="3" title="Slide 4"></span>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-card-frame">
+                        <img src="images/hero_slide_2.jpg" alt="Stepora Ultraboost" class="slide-shoe-img" loading="lazy">
+                        <div class="floating-text">
+                            <span>Performance Redefined</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: Urban Streetwear & Casuals -->
+            <div class="hero-slide" data-slide="2">
+                <div class="hero-content">
+                    <span class="subtitle"><i class='bx bxs-award'></i> ICONIC STREETWEAR</span>
+                    <h1>Make Every Step<br>A Statement.</h1>
+                    <p>Bold proportions, vibrant retro colorways, and timeless street culture aesthetics built to elevate your daily footwear rotation.</p>
+                    <div class="hero-cta-group">
+                        <a href="shop.html" class="btn-primary">Shop Sneakers <i class='bx bx-right-arrow-alt'></i></a>
+                        <a href="shop.html?category=Boots" class="btn-secondary-hero">Rugged Boots</a>
+                    </div>
+                    <div class="carousel-dots">
+                        <span class="dot" data-index="0" title="Slide 1"></span>
+                        <span class="dot" data-index="1" title="Slide 2"></span>
+                        <span class="dot active" data-index="2" title="Slide 3"></span>
+                        <span class="dot" data-index="3" title="Slide 4"></span>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-card-frame">
+                        <img src="images/hero_slide_3.jpg" alt="Stepora Heritage Boot" class="slide-shoe-img" loading="lazy">
+                        <div class="floating-text">
+                            <span>Street Culture Icon</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4: Heritage Handcrafted Leather & Pro Sport -->
+            <div class="hero-slide" data-slide="3">
+                <div class="hero-content">
+                    <span class="subtitle"><i class='bx bxs-rocket'></i> PRO ATHLETICS &amp; LUXURY</span>
+                    <h1>Timeless Elegance,<br>Unrivaled Craft.</h1>
+                    <p>Hand-finished genuine full-grain leather oxfords and athletic racers built for confidence, luxury comfort, and enduring speed.</p>
+                    <div class="hero-cta-group">
+                        <a href="shop.html" class="btn-primary">Gear Up Now <i class='bx bx-right-arrow-alt'></i></a>
+                        <a href="shop.html?category=Sports" class="btn-secondary-hero">All Performance</a>
+                    </div>
+                    <div class="carousel-dots">
+                        <span class="dot" data-index="0" title="Slide 1"></span>
+                        <span class="dot" data-index="1" title="Slide 2"></span>
+                        <span class="dot" data-index="2" title="Slide 3"></span>
+                        <span class="dot active" data-index="3" title="Slide 4"></span>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-card-frame">
+                        <img src="images/hero_slide_4.jpg" alt="Stepora Pro Athletic" class="slide-shoe-img" loading="lazy">
+                        <div class="floating-text">
+                            <span>Handmade Luxury</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Row -->
+    <section class="features">
+        <div class="feature-item">
+            <i class='bx bx-truck'></i>
+            <div>
+                <h4>Free Shipping</h4>
+                <p>On orders over ₹999</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <i class='bx bx-refresh'></i>
+            <div>
+                <h4>Easy Returns</h4>
+                <p>7 Days Return Policy</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <i class='bx bx-shield-quarter'></i>
+            <div>
+                <h4>Secure Payments</h4>
+                <p>100% Secure</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <i class='bx bx-support'></i>
+            <div>
+                <h4>24/7 Support</h4>
+                <p>We're here to help</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop by Category -->
+    <section class="categories">
+        <div class="section-header">
+            <h2>Shop by Category</h2>
+            <a href="shop.html" class="view-all">View All <i class='bx bx-right-arrow-alt'></i></a>
+        </div>
+        <div class="category-grid">
+            <a href="shop.html?category=Running" class="category-card">
+                <div class="cat-img-wrapper"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=200&q=80" alt="Running"></div>
+                <span>Running</span>
+            </a>
+            <a href="shop.html?category=Casual" class="category-card">
+                <div class="cat-img-wrapper"><img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=200&q=80" alt="Casual"></div>
+                <span>Casual</span>
+            </a>
+            <a href="shop.html?category=Formal" class="category-card">
+                <div class="cat-img-wrapper"><img src="images/category_formal.jpg" alt="Formal"></div>
+                <span>Formal</span>
+            </a>
+            <a href="shop.html?category=Sports" class="category-card">
+                <div class="cat-img-wrapper"><img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=200&q=80" alt="Sports"></div>
+                <span>Sports</span>
+            </a>
+            <a href="shop.html?category=Boots" class="category-card">
+                <div class="cat-img-wrapper"><img src="https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=200&q=80" alt="Boots"></div>
+                <span>Boots</span>
+            </a>
+            <a href="shop.html?category=Sneakers" class="category-card">
+                <div class="cat-img-wrapper"><img src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?w=200&q=80" alt="Sneakers"></div>
+                <span>Sneakers</span>
+            </a>
+            <a href="shop.html?category=Sandals" class="category-card">
+                <div class="cat-img-wrapper"><img src="https://images.unsplash.com/photo-1603487742131-4160ec999306?w=200&q=80" alt="Sandals"></div>
+                <span>Sandals</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="products">
+        <div class="section-header">
+            <h2>Featured Products <span class="badge-best">Best Sellers</span></h2>
+            <a href="#" class="view-all">View All <i class='bx bx-right-arrow-alt'></i></a>
+        </div>
+        
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="badge discount">-20%</div>
+                <button class="wishlist-btn"><i class='bx bx-heart'></i></button>
+                <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=400&q=80" alt="Nike Air Zoom Pegasus 40" class="product-img">
+                <div class="product-info">
+                    <h3>Nike Air Zoom Pegasus 40</h3>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'></i>
+                        <span>4.5 (120)</span>
+                    </div>
+                    <div class="price">
+                        <span class="current">₹5,999</span>
+                        <span class="original">₹7,499</span>
+                    </div>
+                    <button class="btn-add-cart"><i class='bx bx-cart'></i> Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="badge new">New</div>
+                <button class="wishlist-btn"><i class='bx bx-heart'></i></button>
+                <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&q=80" alt="Adidas Ultraboost 22" class="product-img">
+                <div class="product-info">
+                    <h3>Adidas Ultraboost 22</h3>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                        <span>4.7 (95)</span>
+                    </div>
+                    <div class="price">
+                        <span class="current">₹6,499</span>
+                        <span class="original">₹8,999</span>
+                    </div>
+                    <button class="btn-add-cart"><i class='bx bx-cart'></i> Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="badge discount">-15%</div>
+                <button class="wishlist-btn"><i class='bx bx-heart'></i></button>
+                <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&q=80" alt="Puma RS-X Retro" class="product-img">
+                <div class="product-info">
+                    <h3>Puma RS-X Retro</h3>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'></i>
+                        <span>4.6 (79)</span>
+                    </div>
+                    <div class="price">
+                        <span class="current">₹4,999</span>
+                        <span class="original">₹5,999</span>
+                    </div>
+                    <button class="btn-add-cart"><i class='bx bx-cart'></i> Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="badge bestseller">Bestseller</div>
+                <button class="wishlist-btn"><i class='bx bx-heart'></i></button>
+                <img src="https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=400&q=80" alt="Woodland Boots" class="product-img">
+                <div class="product-info">
+                    <h3>Woodland Boots</h3>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                        <span>4.8 (302)</span>
+                    </div>
+                    <div class="price">
+                        <span class="current">₹7,999</span>
+                        <span class="original">₹9,999</span>
+                    </div>
+                    <button class="btn-add-cart"><i class='bx bx-cart'></i> Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotional Banners -->
+    <section class="promo-banners">
+        <div class="promo-box dark">
+            <div class="promo-text">
+                <h2>Comfort<br>in Every Step</h2>
+                <p>Premium shoes for better performance & style.</p>
+                <a href="#" class="btn-promo">Explore Collection <i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+            <img src="https://images.unsplash.com/photo-1514989940723-e8e51635b782?w=400&q=80" alt="Comfort">
+        </div>
+        <div class="promo-box light">
+            <div class="promo-text">
+                <h3>Up to</h3>
+                <h2>50% OFF</h2>
+                <p>On Selected Styles<br>Limited Time Only!</p>
+                <a href="#" class="btn-promo dark-btn">Shop Now <i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80" alt="Sale">
+        </div>
+    </section>
+
+    <!-- Trusted Brands -->
+    <section class="trusted-brands">
+        <h2>Our Trusted Brands</h2>
+        <div class="brands-grid">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" alt="Nike">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg" alt="Adidas">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Puma_logo.svg" alt="Puma">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Reebok_2019_logo.svg" alt="Reebok">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/New_Balance_logo.svg" alt="New Balance">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Asics_Logo.svg" alt="Asics">
+            <h3 style="font-family: serif; margin:0;">WOODLAND</h3>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="section-header">
+            <h2>What Our Customers Say</h2>
+            <a href="#" class="view-all">View All Reviews <i class='bx bx-right-arrow-alt'></i></a>
+        </div>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <div class="user-info">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rohan">
+                    <div>
+                        <h4>Rohan Mehta</h4>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                        </div>
+                    </div>
+                </div>
+                <p>"Amazing quality and super fast delivery! The shoes are exactly as shown. Highly recommended!"</p>
+                <div class="purchased-item">
+                    <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=50&q=80" alt="Shoe">
+                    <span>Nike Air Zoom Pegasus 40</span>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="user-info">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya">
+                    <div>
+                        <h4>Priya Sharma</h4>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                        </div>
+                    </div>
+                </div>
+                <p>"Great collection and very comfortable. I loved the packaging and quick support."</p>
+                <div class="purchased-item">
+                    <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=50&q=80" alt="Shoe">
+                    <span>Adidas Ultraboost 22</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="user-info">
+                    <img src="https://randomuser.me/api/portraits/men/86.jpg" alt="Amit">
+                    <div>
+                        <h4>Amit Patel</h4>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                        </div>
+                    </div>
+                </div>
+                <p>"Best online shoe store! Genuine products and competitive prices. Will shop again!"</p>
+                <div class="purchased-item">
+                    <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=50&q=80" alt="Shoe">
+                    <span>Puma RS-X Retro</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <div class="icon-mail">
+                <i class='bx bx-envelope'></i>
+            </div>
+            <div class="news-text">
+                <h2>Stay Updated!</h2>
+                <p>Get the latest offers, new arrivals and exclusive deals.</p>
+            </div>
+            <form class="news-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe <i class='bx bx-right-arrow-alt'></i></button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="logo white">
+                    <i class='bx bxs-shoe' style="font-size: 2.2rem; color: #f28b50;"></i>
+                    <span style="font-weight: 800; font-size: 1.6rem; margin-left: 0.5rem; color: #ffffff;">Stepora</span>
+                </div>
+                <p>Your one-stop destination for premium footwear. We bring you the best brands at the best prices.</p>
+                <div class="social-links">
+                    <a href="#" class="social-btn facebook" title="Facebook" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="social-btn instagram" title="Instagram" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" class="social-btn youtube" title="YouTube" aria-label="YouTube"><i class='bx bxl-youtube'></i></a>
+                    <a href="#" class="social-btn pinterest" title="Pinterest" aria-label="Pinterest"><i class='bx bxl-pinterest'></i></a>
+                    <a href="#" class="social-btn linkedin" title="LinkedIn" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="/">Home</a>
+                <a href="/shop">Shop</a>
+                <a href="/aboutus">About Us</a>
+                <a href="/contactus">Contact Us</a>
+                <a href="#">Track Order</a>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Categories</h4>
+                <a href="/shop">Running</a>
+                <a href="/shop">Casual</a>
+                <a href="/shop">Formal</a>
+                <a href="/shop">Sports</a>
+                <a href="/shop">Boots</a>
+                <a href="/shop">Sneakers</a>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Customer Service</h4>
+                <a href="#">FAQs</a>
+                <a href="#">Return Policy</a>
+                <a href="#">Shipping Info</a>
+                <a href="#">Size Guide</a>
+                <a href="#">Help Center</a>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <div class="contact-info">
+                    <p><i class='bx bx-phone'></i> <span>+91 98765 43210</span></p>
+                    <p><i class='bx bx-envelope'></i> <span>support@stepora.com</span></p>
+                    <p><i class='bx bx-map'></i> <span>Vadodara, Gujarat, India</span></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2026 Stepora. All rights reserved.</p>
+            <div class="payment-methods">
+                <span class="pay-title">We Accept:</span>
+                <span class="pay-card visa" title="Visa"><i class='bx bxl-visa'></i></span>
+                <span class="pay-card mastercard" title="Mastercard"><i class='bx bxl-mastercard'></i></span>
+                <span class="pay-card paytm" title="Paytm">Paytm</span>
+                <span class="pay-card upi" title="UPI">UPI</span>
+                <span class="pay-card gpay" title="Google Pay"><i class='bx bxl-google'></i> Pay</span>
+            </div>
+            <button class="back-to-top" id="backToTopBtn" title="Back to top" aria-label="Back to top"><i class='bx bx-up-arrow-alt'></i></button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

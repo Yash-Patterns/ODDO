@@ -1,0 +1,20 @@
+# Large binary installer (GitHub blocks files >100MB)
+odoo_setup.exe
+
+# Scratch & temporary testing files
+scratch/
+config/
+*.log
+.tempmediaStorage/
+.user_uploaded/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# OS and Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
